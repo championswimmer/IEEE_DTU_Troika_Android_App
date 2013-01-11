@@ -9,6 +9,7 @@ package com.dcetech.troika;
 
 public final class Manifest {
     public static final class permission {
+        public static final String INTERNET="android.permission.INTERNET";
         public static final String READ_CONTACTS="android.permission.READ_CONTACTS";
     }
 }

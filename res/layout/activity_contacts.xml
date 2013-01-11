@@ -10,42 +10,36 @@
     android:paddingLeft="6dp"
     android:paddingTop="6dp" >
 
-    <ImageButton
+    <QuickContactBadge
         android:id="@+id/quickContactBadgechairman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:scaleType="fitXY"
         android:minHeight="110dp"
         android:minWidth="110dp"
-        android:onClick="addContactChairman"
         android:src="@drawable/ic_contact_chairman" />
 
-    <ImageButton
+    <QuickContactBadge
         android:id="@+id/quickContactBadgevicechairman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/quickContactBadgechairman"
         android:layout_below="@+id/quickContactBadgechairman"
         android:layout_marginTop="16dp"
-        android:scaleType="fitXY"
         android:minHeight="110dp"
         android:minWidth="110dp"
-        android:onClick="addContactViceChairman"
         android:src="@drawable/ic_contact_vicechairman" />
 
-    <ImageButton
+    <QuickContactBadge
         android:id="@+id/quickContactBadgeheadcorpo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/quickContactBadgevicechairman"
         android:layout_below="@+id/quickContactBadgevicechairman"
         android:layout_marginTop="16dp"
-        android:scaleType="fitXY"
         android:minHeight="110dp"
         android:minWidth="110dp"
-        android:onClick="addContactHeadCorpo"
         android:src="@drawable/ic_contact_headcorpo" />
 
     <FrameLayout
