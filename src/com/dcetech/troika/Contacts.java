@@ -69,8 +69,8 @@ public class Contacts extends Activity {
                 finish();
             	return true;
             case R.id.menu_events:
-            	Intent mainpage = new Intent(Contacts.this, MainPage.class);
-                startActivity(mainpage);
+            	Intent events = new Intent(Contacts.this, Events.class);
+                startActivity(events);
                 finish();
                 return true;
             default:

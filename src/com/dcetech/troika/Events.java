@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainPage extends Activity {
+
+public class Events extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main_page);
+		setContentView(R.layout.activity_events);
 	
 	}
 
@@ -21,18 +22,17 @@ public class MainPage extends Activity {
 		getMenuInflater().inflate(R.menu.activity_main_page, menu);
 		return true;
 	}
-	
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.menu_contacts:
-            	Intent contacts = new Intent(MainPage.this, Contacts.class);
+            	Intent contacts = new Intent(Events.this, Contacts.class);
                 startActivity(contacts);
                 finish();
             	return true;
             case R.id.menu_events:
-            	Intent events = new Intent(MainPage.this, Events.class);
+            	Intent events = new Intent(Events.this, Events.class);
                 startActivity (events);
                 finish();
                 return true;
@@ -40,8 +40,13 @@ public class MainPage extends Activity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    @Override
+	
+	@Override
 	public void onBackPressed() {
-		finish();
-    }
+		Intent mainpage = new Intent(Events.this, MainPage.class);
+        startActivity(mainpage);
+        finish();
+
+	}
+	
 }
