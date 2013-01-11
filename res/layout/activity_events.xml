@@ -144,10 +144,37 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:layout_marginTop="125dp" >
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="274dp"
+        android:layout_height="280dp"
         android:layout_gravity="top" >
+        
+
+        <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/viewFlipperEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+            
+            <include android:id="@+id/ViewDEFAULT"  layout="@layout/view_default" />
+            <include android:id="@+id/ViewBITS"  layout="@layout/view_bits" />
+            <include android:id="@+id/ViewBOTS"  layout="@layout/view_bots" />
+            <include android:id="@+id/ViewBRAINWAVE"  layout="@layout/view_brainwave" />
+            <include android:id="@+id/ViewBULLSBEARS"  layout="@layout/view_bullsbears" />
+            <include android:id="@+id/ViewBYTES"  layout="@layout/view_bytes" />
+            <include android:id="@+id/ViewDESIGNPRO"  layout="@layout/view_designpro" />
+            <include android:id="@+id/ViewELECTROCUTION"  layout="@layout/view_electrocution" />
+            <include android:id="@+id/ViewENVISION"  layout="@layout/view_envision" />
+            <include android:id="@+id/ViewETHERAVATAR"  layout="@layout/view_etheravatar" />
+            <include android:id="@+id/ViewJUNKYARD"  layout="@layout/view_junkyard" />
+            <include android:id="@+id/ViewMIST"  layout="@layout/view_mist" />
+            <include android:id="@+id/ViewRADIX"  layout="@layout/view_radix" />
+            <include android:id="@+id/ViewSPAC"  layout="@layout/view_spac" />
+            <include android:id="@+id/ViewTECHNOVISION"  layout="@layout/view_technovision" />
+            <include android:id="@+id/ViewTODOENUNO"  layout="@layout/view_todoenuno" />
+            </ViewFlipper>
 
     </RelativeLayout>
 </ScrollView>    
