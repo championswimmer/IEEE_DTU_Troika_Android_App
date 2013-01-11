@@ -2,26 +2,153 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100dp" >
-</LinearLayout>
+
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/eventsScroller"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:gravity="top"
+        android:scrollbarStyle="insideOverlay"
+        android:transcriptMode="alwaysScroll"
+         >
+
+      <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="1000dp"
+          android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageBITS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/bits" />
+        <ImageView
+            android:id="@+id/imageBOTS"
+            android:layout_toRightOf="@id/imageBITS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/bots" />
+
+        <ImageView
+            android:id="@+id/imageBRAINWAVE"
+            android:layout_toRightOf="@id/imageBOTS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/brainwave" />
+
+        <ImageView
+            android:id="@+id/imageBULLSBEARS"
+            android:layout_toRightOf="@id/imageBRAINWAVE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/bullsbears" />
     
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginTop="100dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-     >
-   
-  <LinearLayout
-      xmlns:android="http://schemas.android.com/apk/res/android"
-      android:layout_width="match_parent"
-      android:layout_height="182dp"
-       >
-      
-  </LinearLayout>
+        <ImageView
+            android:id="@+id/imageBYTES"
+            android:layout_toRightOf="@id/imageBULLSBEARS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/bytes" />
+        
+        <ImageView
+            android:id="@+id/imageDESIGNPRO"
+            android:layout_toRightOf="@id/imageBYTES"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/designpro" />
+        
+        <ImageView
+            android:id="@+id/imageELECTROCUTION"
+            android:layout_toRightOf="@id/imageBYTES"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/electrocution" />
 
-</ScrollView>
+        <ImageView
+            android:id="@+id/imageENVISION"
+            android:layout_toRightOf="@id/imageELECTROCUTION"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/envision" />
 
+        <ImageView
+            android:id="@+id/imageETHERAVATAR"
+            android:layout_toRightOf="@id/imageENVISION"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/etheravatar" />
 
+        <ImageView
+            android:id="@+id/imageJUNKYARD"
+            android:layout_toRightOf="@id/imageETHERAVATAR"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/junkyard" />
+
+        <ImageView
+            android:id="@+id/imageMIST"
+            android:layout_toRightOf="@id/imageJUNKYARD"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/mist" />
+
+        <ImageView
+            android:id="@+id/imageRADIX"
+            android:layout_toRightOf="@id/imageMIST"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/radix" />
+        
+        <ImageView
+            android:id="@+id/imageSPAC"
+            android:layout_toRightOf="@id/imageRADIX"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/spac" />
+        
+        <ImageView
+            android:id="@+id/imageTECHNOVISION"
+            android:layout_toRightOf="@id/imageSPAC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/technovision" />
+        
+        <ImageView
+            android:id="@+id/imageTODOENUNO"
+            android:layout_toRightOf="@id/imageTECHNOVISION"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/todoenuno" />
+        
+        </LinearLayout>
+    </HorizontalScrollView>
+     
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="125dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_gravity="top" >
+
+    </RelativeLayout>
+</ScrollView>    
 </FrameLayout>

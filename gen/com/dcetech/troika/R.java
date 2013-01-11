@@ -11,15 +11,46 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_contact_chairman=0x7f020000;
-        public static final int ic_contact_headcorpo=0x7f020001;
-        public static final int ic_contact_vicechairman=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
+        public static final int bits=0x7f020000;
+        public static final int bots=0x7f020001;
+        public static final int brainwave=0x7f020002;
+        public static final int bullsbears=0x7f020003;
+        public static final int bytes=0x7f020004;
+        public static final int designpro=0x7f020005;
+        public static final int electrocution=0x7f020006;
+        public static final int envision=0x7f020007;
+        public static final int etheravatar=0x7f020008;
+        public static final int ic_contact_chairman=0x7f020009;
+        public static final int ic_contact_headcorpo=0x7f02000a;
+        public static final int ic_contact_vicechairman=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int junkyard=0x7f02000d;
+        public static final int mist=0x7f02000e;
+        public static final int radix=0x7f02000f;
+        public static final int spac=0x7f020010;
+        public static final int technovision=0x7f020011;
+        public static final int todoenuno=0x7f020012;
     }
     public static final class id {
+        public static final int eventsScroller=0x7f07000b;
         public static final int frameLayout1=0x7f070003;
-        public static final int menu_contacts=0x7f07000b;
-        public static final int menu_events=0x7f07000c;
+        public static final int imageBITS=0x7f07000c;
+        public static final int imageBOTS=0x7f07000d;
+        public static final int imageBRAINWAVE=0x7f07000e;
+        public static final int imageBULLSBEARS=0x7f07000f;
+        public static final int imageBYTES=0x7f070010;
+        public static final int imageDESIGNPRO=0x7f070011;
+        public static final int imageELECTROCUTION=0x7f070012;
+        public static final int imageENVISION=0x7f070013;
+        public static final int imageETHERAVATAR=0x7f070014;
+        public static final int imageJUNKYARD=0x7f070015;
+        public static final int imageMIST=0x7f070016;
+        public static final int imageRADIX=0x7f070017;
+        public static final int imageSPAC=0x7f070018;
+        public static final int imageTECHNOVISION=0x7f070019;
+        public static final int imageTODOENUNO=0x7f07001a;
+        public static final int menu_contacts=0x7f07001b;
+        public static final int menu_events=0x7f07001c;
         public static final int quickContactBadgechairman=0x7f070000;
         public static final int quickContactBadgeheadcorpo=0x7f070002;
         public static final int quickContactBadgevicechairman=0x7f070001;

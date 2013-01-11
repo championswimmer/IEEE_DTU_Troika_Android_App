@@ -5,14 +5,50 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.HorizontalScrollView;
 
 
 public class Events extends Activity {
+	HorizontalScrollView eventsScroller;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_events);
+		
+		eventsScroller=((HorizontalScrollView) findViewById(R.id.eventsScroller));
+		eventsScroller.postDelayed(new Runnable() {
+	        @Override
+	        public void run() {
+	        	eventsScroller.fling(3200);
+	        	eventsScroller.fling(900);
+	        	eventsScroller.fling(1500);
+	        }
+	    }, 1000);
+		eventsScroller.postDelayed(new Runnable() {
+	        @Override
+	        public void run() {
+	        	eventsScroller.fling(-1700);
+	        	eventsScroller.fling(-800);
+	        	eventsScroller.fling(-1100);
+	        }
+	    }, 2000);
+		eventsScroller.postDelayed(new Runnable() {
+	        @Override
+	        public void run() {
+	        	eventsScroller.fling(1800);
+	        	eventsScroller.fling(1300);
+	        	eventsScroller.fling(600);
+	        }
+	    }, 3000);
+		eventsScroller.postDelayed(new Runnable() {
+	        @Override
+	        public void run() {
+	        	eventsScroller.fling(-1200);
+	        	eventsScroller.fling(-500);
+	        	eventsScroller.fling(-100);
+	        }
+	    }, 4000);
 	
 	}
 
