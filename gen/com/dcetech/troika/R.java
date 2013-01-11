@@ -11,12 +11,25 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ic_contact_chairman=0x7f020000;
+        public static final int ic_contact_headcorpo=0x7f020001;
+        public static final int ic_contact_vicechairman=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int menu_contacts=0x7f070001;
-        public static final int menu_events=0x7f070002;
-        public static final int quickContactBadge1=0x7f070000;
+        public static final int frameLayout1=0x7f070003;
+        public static final int menu_contacts=0x7f07000b;
+        public static final int menu_events=0x7f07000c;
+        public static final int quickContactBadgechairman=0x7f070000;
+        public static final int quickContactBadgeheadcorpo=0x7f070002;
+        public static final int quickContactBadgevicechairman=0x7f070001;
+        public static final int textIEEEDTU=0x7f070006;
+        public static final int textViewChairman=0x7f070005;
+        public static final int textViewHeadCorpo=0x7f07000a;
+        public static final int textViewIshaanMalhotra=0x7f070004;
+        public static final int textViewViceChairman=0x7f070008;
+        public static final int textViewheadcorpo=0x7f070009;
+        public static final int textViewvicechairman=0x7f070007;
     }
     public static final class layout {
         public static final int activity_contacts=0x7f030000;

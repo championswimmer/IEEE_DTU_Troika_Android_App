@@ -21,7 +21,34 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
         </activity>
+        <activity
+            android:name="com.dcetech.troika.Contacts"
+            android:label="Contacts">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+        </intent-filter>
+        <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="tel" />
+        </intent-filter>
+        </activity>
+        <intent-filter android:priority="100">
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+        </intent-filter>
+        <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="tel" />
+        </intent-filter>
     </application>
 
 </manifest>

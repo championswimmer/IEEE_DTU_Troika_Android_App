@@ -1,15 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="wrap_content" >
 
-    <QuickContactBadge
-        android:id="@+id/quickContactBadge1"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="404dp"
+    android:paddingLeft="6dp"
+    android:paddingTop="6dp" >
+
+    <ImageButton
+        android:id="@+id/quickContactBadgechairman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="44dp" />
+        android:scaleType="fitXY"
+        android:minHeight="110dp"
+        android:minWidth="110dp"
+        android:onClick="addContactChairman"
+        android:src="@drawable/ic_contact_chairman" />
 
+    <ImageButton
+        android:id="@+id/quickContactBadgevicechairman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quickContactBadgechairman"
+        android:layout_below="@+id/quickContactBadgechairman"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:minHeight="110dp"
+        android:minWidth="110dp"
+        android:onClick="addContactViceChairman"
+        android:src="@drawable/ic_contact_vicechairman" />
+
+    <ImageButton
+        android:id="@+id/quickContactBadgeheadcorpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quickContactBadgevicechairman"
+        android:layout_below="@+id/quickContactBadgevicechairman"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:minHeight="110dp"
+        android:minWidth="110dp"
+        android:onClick="addContactHeadCorpo"
+        android:src="@drawable/ic_contact_headcorpo" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickContactBadgechairman"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/quickContactBadgechairman"
+        android:layout_toRightOf="@+id/quickContactBadgechairman" >
+
+        <TextView
+            android:id="@+id/textViewIshaanMalhotra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Ishaan Malhotra"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewChairman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Chairman"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/textIEEEDTU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:text="IEEE, DTU"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickContactBadgevicechairman"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/quickContactBadgevicechairman"
+        android:layout_toRightOf="@+id/quickContactBadgevicechairman" >
+
+        <TextView
+            android:id="@+id/textViewvicechairman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Aseem Sayal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewViceChairman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Vice Chairman"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:text="IEEE, DTU"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickContactBadgeheadcorpo"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/quickContactBadgeheadcorpo"
+        android:layout_toRightOf="@+id/quickContactBadgeheadcorpo" >
+
+        <TextView
+            android:id="@+id/textViewheadcorpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Anantika Gupta"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewHeadCorpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Head, Corporate Affairs"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:text="IEEE, DTU"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+    </FrameLayout>
 </RelativeLayout>
+
+</ScrollView>
