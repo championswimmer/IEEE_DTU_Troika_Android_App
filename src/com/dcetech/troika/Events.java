@@ -16,28 +16,21 @@ import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 
 public class Events extends Activity {
-	HorizontalScrollView eventsScroller;
-	ViewFlipper eventViewer;
-	public int eventOpt = 0;
+	ScrollView eventsScroller;
 	public String[] eventFbPages;
 	public String[] eventWebPages;
-	View ButtonBar;
-	
+
 	public void loadURLs() {
 		eventFbPages = getResources().getStringArray(R.array.event_fb_pages);
 		eventWebPages = getResources().getStringArray(R.array.event_web_pages);
 	}
-	public void viewInflater (int opt) {
-    	eventOpt = opt;
-    	eventViewer.setDisplayedChild(opt);
-    	ButtonBar.setVisibility(View.VISIBLE);
-	}
-
+	
 	public void goToFb (String uri) {
 		Uri fbUri = Uri.parse(uri);
         Intent launchFb = new Intent(Intent.ACTION_VIEW, fbUri);
@@ -48,12 +41,6 @@ public class Events extends Activity {
         Intent launchWeb = new Intent(Intent.ACTION_VIEW, webUri);
         startActivity(launchWeb);
 	}
-	public void onClickFb (View view) {
-		goToFb(eventFbPages[eventOpt]);
-	}
-	public void onClickWeb (View view) {
-		goToWeb(eventWebPages[eventOpt]);
-	}
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +48,7 @@ public class Events extends Activity {
 		setContentView(R.layout.activity_events);
 		
 		loadURLs();
-		ButtonBar = (View) findViewById(R.id.ButtonBar);
-		ButtonBar.setVisibility(View.GONE);
-		
-		eventsScroller=((HorizontalScrollView) findViewById(R.id.eventsScroller));
+		eventsScroller=((ScrollView) findViewById(R.id.eventsScroller));
 		eventsScroller.postDelayed(new Runnable() {
 	        @Override
 	        public void run() {
@@ -98,99 +82,203 @@ public class Events extends Activity {
 	        }
 	    }, 4000);
 		
-		eventViewer =(ViewFlipper) findViewById(R.id.viewFlipperEvents);
 		ImageView BITS = (ImageView) findViewById(R.id.imageBITS);
 		BITS.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(1);
+	        	goToFb(eventWebPages[1]);
 	        }
 	    });
+		BITS.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[1]);
+	        	return true;
+	        }
+	    });
+		
         ImageView BOTS = (ImageView) findViewById(R.id.imageBOTS);
 		BOTS.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(2);
+	        	goToFb(eventWebPages[2]);
 	        }
 	    });
+		BOTS.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[2]);
+	        	return true;
+	        }
+	    });
+		
         ImageView BRAINWAVE = (ImageView) findViewById(R.id.imageBRAINWAVE);
 		BRAINWAVE.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(3);
+	        	goToFb(eventWebPages[3]);
 	        }
 	    });
+		BRAINWAVE.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[3]);
+	        	return true;
+	        }
+	    });
+		
         ImageView BULLSBEARS = (ImageView) findViewById(R.id.imageBULLSBEARS);
 		BULLSBEARS.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(4);
+	        	goToFb(eventWebPages[4]);
 	        }
 	    });
+		BRAINWAVE.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[4]);
+	        	return true;
+	        }
+	    });
+		
         ImageView BYTES = (ImageView) findViewById(R.id.imageBYTES);
 		BYTES.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(5);
+	        	goToFb(eventWebPages[5]);
 	        }
 	    });
+		BYTES.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[5]);
+	        	return true;
+	        }
+	    });
+		
         ImageView DESIGNPRO = (ImageView) findViewById(R.id.imageDESIGNPRO);
 		DESIGNPRO.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(6);
+	        	goToFb(eventWebPages[6]);
 	        }
 	    });
+		DESIGNPRO.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[6]);
+	        	return true;
+	        }
+	    });
+		
         ImageView ELECTROCUTION = (ImageView) findViewById(R.id.imageELECTROCUTION);
 		ELECTROCUTION.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(7);
+	        	goToFb(eventWebPages[7]);
 	        }
 	    });
+		ELECTROCUTION.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[7]);
+	        	return true;
+	        }
+	    });
+		
         ImageView ENVISION = (ImageView) findViewById(R.id.imageENVISION);
 		ENVISION.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(8);
+	        	goToFb(eventWebPages[8]);
 	        }
 	    });
+		ENVISION.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[8]);
+	        	return true;
+	        }
+	    });
+		
         ImageView ETHERAVATAR = (ImageView) findViewById(R.id.imageETHERAVATAR);
 		ETHERAVATAR.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(9);
+	        	goToFb(eventWebPages[9]);
 	        }
 	    });
+		ETHERAVATAR.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[9]);
+	        	return true;
+	        }
+	    });
+		
         ImageView JUNKYARD = (ImageView) findViewById(R.id.imageJUNKYARD);
 		JUNKYARD.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(10);
+	        	goToFb(eventWebPages[10]);
 	        }
 	    });
+		JUNKYARD.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[10]);
+	        	return true;
+	        }
+	    });
+		
         ImageView MIST = (ImageView) findViewById(R.id.imageMIST);
 		MIST.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(11);
+	        	goToFb(eventWebPages[11]);
 	        }
 	    });
+		MIST.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[11]);
+	        	return true;
+	        }
+	    });
+		
         ImageView RADIX = (ImageView) findViewById(R.id.imageRADIX);
 		RADIX.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(12);
+	        	goToFb(eventWebPages[12]);
 	        }
 	    });
+		RADIX.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[12]);
+	        	return true;
+	        }
+	    });
+		
         ImageView SPAC = (ImageView) findViewById(R.id.imageSPAC);
 		SPAC.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(13);
+	        	goToFb(eventWebPages[13]);
 	        }
 	    });
+		SPAC.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[13]);
+	        	return true;
+	        }
+	    });
+		
         ImageView TECHNOVISION = (ImageView) findViewById(R.id.imageTECHNOVISION);
 		TECHNOVISION.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(14);
+	        	goToFb(eventWebPages[14]);
 	        }
 	    });
+		TECHNOVISION.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[14]);
+	        	return true;
+	        }
+	    });
+		
         ImageView TODOENUNO = (ImageView) findViewById(R.id.imageTODOENUNO);
 		TODOENUNO.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
-	        	viewInflater(15);
+	        	goToFb(eventWebPages[15]);
 	        }
 	    });
+		TODOENUNO.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[15]);
+	        	return true;
+	        }
+	    });
+		
 
-		final Toast eventChooser = Toast.makeText(Events.this, "Click on any event from the topbar to see details.\n\nYou can visit the event's facebook page or website", Toast.LENGTH_LONG);
+		final Toast eventChooser = Toast.makeText(Events.this, "Click on any event to visit event website.\n\nLong-press on event to go to Facebook page", Toast.LENGTH_LONG);
 		eventChooser.setGravity(Gravity.CENTER, eventChooser.getXOffset() / 2, eventChooser.getYOffset() / 2);
 		new CountDownTimer(2000, 1000)
 		{
