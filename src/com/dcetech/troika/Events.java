@@ -18,6 +18,7 @@ import android.widget.ViewFlipper;
 public class Events extends Activity {
 	HorizontalScrollView eventsScroller;
 	ViewFlipper eventViewer;
+	public int eventOpt;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -62,90 +63,105 @@ public class Events extends Activity {
 		ImageView BITS = (ImageView) findViewById(R.id.imageBITS);
 		BITS.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 1;
 	        	eventViewer.setDisplayedChild(1);
 	        }
 	    });
         ImageView BOTS = (ImageView) findViewById(R.id.imageBOTS);
 		BOTS.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 2;
 	        	eventViewer.setDisplayedChild(2);
 	        }
 	    });
         ImageView BRAINWAVE = (ImageView) findViewById(R.id.imageBRAINWAVE);
 		BRAINWAVE.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 3;
 	        	eventViewer.setDisplayedChild(3);
 	        }
 	    });
         ImageView BULLSBEARS = (ImageView) findViewById(R.id.imageBULLSBEARS);
 		BULLSBEARS.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 4;
 	        	eventViewer.setDisplayedChild(4);
 	        }
 	    });
         ImageView BYTES = (ImageView) findViewById(R.id.imageBYTES);
 		BYTES.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 5;
 	        	eventViewer.setDisplayedChild(5);
 	        }
 	    });
         ImageView DESIGNPRO = (ImageView) findViewById(R.id.imageDESIGNPRO);
 		DESIGNPRO.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 6;
 	        	eventViewer.setDisplayedChild(6);
 	        }
 	    });
         ImageView ELECTROCUTION = (ImageView) findViewById(R.id.imageELECTROCUTION);
 		ELECTROCUTION.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 7;
 	        	eventViewer.setDisplayedChild(7);
 	        }
 	    });
         ImageView ENVISION = (ImageView) findViewById(R.id.imageENVISION);
 		ENVISION.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 8;
 	        	eventViewer.setDisplayedChild(8);
 	        }
 	    });
         ImageView ETHERAVATAR = (ImageView) findViewById(R.id.imageETHERAVATAR);
 		ETHERAVATAR.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 9;
 	        	eventViewer.setDisplayedChild(9);
 	        }
 	    });
         ImageView JUNKYARD = (ImageView) findViewById(R.id.imageJUNKYARD);
 		JUNKYARD.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 10;
 	        	eventViewer.setDisplayedChild(10);
 	        }
 	    });
         ImageView MIST = (ImageView) findViewById(R.id.imageMIST);
 		MIST.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 11;
 	        	eventViewer.setDisplayedChild(11);
 	        }
 	    });
         ImageView RADIX = (ImageView) findViewById(R.id.imageRADIX);
 		RADIX.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 12;
 	        	eventViewer.setDisplayedChild(12);
 	        }
 	    });
         ImageView SPAC = (ImageView) findViewById(R.id.imageSPAC);
 		SPAC.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 13;
 	        	eventViewer.setDisplayedChild(13);
 	        }
 	    });
         ImageView TECHNOVISION = (ImageView) findViewById(R.id.imageTECHNOVISION);
 		TECHNOVISION.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 14;
 	        	eventViewer.setDisplayedChild(14);
 	        }
 	    });
         ImageView TODOENUNO = (ImageView) findViewById(R.id.imageTODOENUNO);
 		TODOENUNO.setOnClickListener (new View.OnClickListener() { 
 	        public void onClick(View v) {
+	        	eventOpt = 15;
 	        	eventViewer.setDisplayedChild(15);
 	        }
 	    });
