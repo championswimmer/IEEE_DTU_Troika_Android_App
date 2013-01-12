@@ -2,10 +2,12 @@ package com.dcetech.troika;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +16,7 @@ import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 
@@ -46,10 +49,10 @@ public class Events extends Activity {
         startActivity(launchWeb);
 	}
 	public void onClickFb (View view) {
-		Log.d("TROIKA", "clicked");
-		Log.d("TROIKA", "opt =" + eventOpt);
-		Log.d("TROIKA", "link =" + eventFbPages[eventOpt]);
 		goToFb(eventFbPages[eventOpt]);
+	}
+	public void onClickWeb (View view) {
+		goToWeb(eventWebPages[eventOpt]);
 	}
 	
 	@Override
@@ -186,6 +189,17 @@ public class Events extends Activity {
 	        	viewInflater(15);
 	        }
 	    });
+
+		final Toast eventChooser = Toast.makeText(Events.this, "Click on any event from the topbar to see details.\n\nYou can visit the event's facebook page or website", Toast.LENGTH_LONG);
+		eventChooser.setGravity(Gravity.CENTER, eventChooser.getXOffset() / 2, eventChooser.getYOffset() / 2);
+		new CountDownTimer(2000, 1000)
+		{
+
+		    public void onTick(long millisUntilFinished) {eventChooser.show();}
+		    public void onFinish() {eventChooser.show();}
+
+		}.start();
+
 	}
 	
 

@@ -10,5 +10,5 @@
         android:layout_height="wrap_content"
         android:text="Bits"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
+    
 </LinearLayout>
