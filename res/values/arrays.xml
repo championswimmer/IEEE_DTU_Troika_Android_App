@@ -1,38 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="event_fb_pages">
-        <item>fb://page/512087695498114</item>
-        <item>fb://page/512087695498114</item>
-        <item>fb://page/110870459087761</item>
-        <item>fb://page/398398093576544</item>
-        <item>fb://page/512087695498114</item>
-        <item>fb://page/279537535502460</item>
-        <item>fb://page/326892647423530</item>
-        <item>fb://page/</item>
-        <item>fb://page/403193776417066</item>
-        <item>fb://page/460106214049484</item>
-        <item>fb://page/</item>
-        <item>fb://page/563341740360333</item>
-        <item>fb://page/</item>
-        <item>fb://page/125379737629870</item>
-        <item>fb://page/394434650638892</item>
-        </string-array>
-    <string-array name="event_web_pages">
-        <item >http://troika.dcetech.com/events/bbb.html</item>
-        <item >http://troika.dcetech.com/events/bbb.html</item>
-        <item >http://troika.dcetech.com/events/brainwave.html</item>
-        <item >http://troika.dcetech.com/events/bnb.html</item>
-        <item >http://troika.dcetech.com/events/bbb.html</item>
-        <item >http://troika.dcetech.com/events/design_pro.html</item>
-        <item >http://troika.dcetech.com/events/electrocution.html</item>
-        <item >http://troika.dcetech.com/events/envision.html</item>
-        <item >http://troika.dcetech.com/events/ether_avatar.html</item>
-        <item >http://troika.dcetech.com/events/junkyard.html</item>
-        <item >http://troika.dcetech.com/events/mist.html</item>
-        <item >http://troika.dcetech.com/events/radix.html</item>
-        <item >http://troika.dcetech.com/events/spac.html</item>
-        <item >http://troika.dcetech.com/events/technovision.html</item>
-        <item >http://troika.dcetech.com/events/TodoEnUno.html</item>
-        </string-array>
     
 </resources>

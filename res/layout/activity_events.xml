@@ -138,12 +138,29 @@
         
         </LinearLayout>
     </HorizontalScrollView>
+    
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:layout_marginTop="125dp" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFb"
+        android:src="@android:drawable/btn_star" />
+    
+</LinearLayout>
      
 <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_marginTop="125dp" >
+        android:layout_marginTop="225dp" >
 
     <RelativeLayout
         android:layout_width="match_parent"

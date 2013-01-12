@@ -9,8 +9,8 @@ package com.dcetech.troika;
 
 public final class R {
     public static final class array {
-        public static final int event_fb_pages=0x7f040000;
-        public static final int event_web_pages=0x7f040001;
+        public static final int event_fb_pages=0x7f050000;
+        public static final int event_web_pages=0x7f050001;
     }
     public static final class attr {
     }
@@ -36,22 +36,23 @@ public final class R {
         public static final int todoenuno=0x7f020012;
     }
     public static final class id {
-        public static final int ViewBITS=0x7f08001d;
-        public static final int ViewBOTS=0x7f08001e;
-        public static final int ViewBRAINWAVE=0x7f08001f;
-        public static final int ViewBULLSBEARS=0x7f080020;
-        public static final int ViewBYTES=0x7f080021;
-        public static final int ViewDEFAULT=0x7f08001c;
-        public static final int ViewDESIGNPRO=0x7f080022;
-        public static final int ViewELECTROCUTION=0x7f080023;
-        public static final int ViewENVISION=0x7f080024;
-        public static final int ViewETHERAVATAR=0x7f080025;
-        public static final int ViewJUNKYARD=0x7f080026;
-        public static final int ViewMIST=0x7f080027;
-        public static final int ViewRADIX=0x7f080028;
-        public static final int ViewSPAC=0x7f080029;
-        public static final int ViewTECHNOVISION=0x7f08002a;
-        public static final int ViewTODOENUNO=0x7f08002b;
+        public static final int ButtonBar=0x7f08001b;
+        public static final int ViewBITS=0x7f08001f;
+        public static final int ViewBOTS=0x7f080020;
+        public static final int ViewBRAINWAVE=0x7f080021;
+        public static final int ViewBULLSBEARS=0x7f080022;
+        public static final int ViewBYTES=0x7f080023;
+        public static final int ViewDEFAULT=0x7f08001e;
+        public static final int ViewDESIGNPRO=0x7f080024;
+        public static final int ViewELECTROCUTION=0x7f080025;
+        public static final int ViewENVISION=0x7f080026;
+        public static final int ViewETHERAVATAR=0x7f080027;
+        public static final int ViewJUNKYARD=0x7f080028;
+        public static final int ViewMIST=0x7f080029;
+        public static final int ViewRADIX=0x7f08002a;
+        public static final int ViewSPAC=0x7f08002b;
+        public static final int ViewTECHNOVISION=0x7f08002c;
+        public static final int ViewTODOENUNO=0x7f08002d;
         public static final int eventsScroller=0x7f08000b;
         public static final int frameLayout1=0x7f080003;
         public static final int imageBITS=0x7f08000c;
@@ -59,6 +60,7 @@ public final class R {
         public static final int imageBRAINWAVE=0x7f08000e;
         public static final int imageBULLSBEARS=0x7f08000f;
         public static final int imageBYTES=0x7f080010;
+        public static final int imageButton1=0x7f08001c;
         public static final int imageDESIGNPRO=0x7f080011;
         public static final int imageELECTROCUTION=0x7f080012;
         public static final int imageENVISION=0x7f080013;
@@ -69,20 +71,20 @@ public final class R {
         public static final int imageSPAC=0x7f080018;
         public static final int imageTECHNOVISION=0x7f080019;
         public static final int imageTODOENUNO=0x7f08001a;
-        public static final int menu_contacts=0x7f08002d;
-        public static final int menu_events=0x7f08002e;
+        public static final int menu_contacts=0x7f08002f;
+        public static final int menu_events=0x7f080030;
         public static final int quickContactBadgechairman=0x7f080000;
         public static final int quickContactBadgeheadcorpo=0x7f080002;
         public static final int quickContactBadgevicechairman=0x7f080001;
         public static final int textIEEEDTU=0x7f080006;
-        public static final int textView1=0x7f08002c;
+        public static final int textView1=0x7f08002e;
         public static final int textViewChairman=0x7f080005;
         public static final int textViewHeadCorpo=0x7f08000a;
         public static final int textViewIshaanMalhotra=0x7f080004;
         public static final int textViewViceChairman=0x7f080008;
         public static final int textViewheadcorpo=0x7f080009;
         public static final int textViewvicechairman=0x7f080007;
-        public static final int viewFlipperEvents=0x7f08001b;
+        public static final int viewFlipperEvents=0x7f08001d;
     }
     public static final class layout {
         public static final int activity_contacts=0x7f030000;
@@ -109,9 +111,9 @@ public final class R {
         public static final int activity_main_page=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
-        public static final int menu_settings=0x7f050002;
+        public static final int app_name=0x7f040000;
+        public static final int hello_world=0x7f040001;
+        public static final int menu_settings=0x7f040002;
     }
     public static final class style {
         /** 

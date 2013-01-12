@@ -1,9 +1,11 @@
 package com.dcetech.troika;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,12 +20,38 @@ import android.widget.ViewFlipper;
 public class Events extends Activity {
 	HorizontalScrollView eventsScroller;
 	ViewFlipper eventViewer;
-	public int eventOpt;
+	public int eventOpt = 0;
+	public String[] eventFbPages;
+	public String[] eventWebPages;
+	
+	public void loadURLs() {
+		eventFbPages = getResources().getStringArray(R.array.event_fb_pages);
+		eventWebPages = getResources().getStringArray(R.array.event_web_pages);
+	}
 
+	public void goToFb (String uri) {
+		Uri fbUri = Uri.parse(uri);
+        Intent launchFb = new Intent(Intent.ACTION_VIEW, fbUri);
+        startActivity(launchFb);
+	}
+	public void goToWeb (String uri) {
+		Uri webUri = Uri.parse(uri);
+        Intent launchWeb = new Intent(Intent.ACTION_VIEW, webUri);
+        startActivity(launchWeb);
+	}
+	public void onClickFb (View view) {
+		Log.d("TROIKA", "clicked");
+		Log.d("TROIKA", "opt =" + eventOpt);
+		Log.d("TROIKA", "link =" + eventFbPages[eventOpt]);
+		goToFb(eventFbPages[eventOpt]);
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_events);
+		
+		loadURLs();
 		
 		eventsScroller=((HorizontalScrollView) findViewById(R.id.eventsScroller));
 		eventsScroller.postDelayed(new Runnable() {
