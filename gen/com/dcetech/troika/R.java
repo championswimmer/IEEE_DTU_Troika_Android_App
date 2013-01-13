@@ -35,9 +35,12 @@ public final class R {
         public static final int radix=0x7f020011;
         public static final int spac=0x7f020012;
         public static final int technovision=0x7f020013;
-        public static final int todoenuno=0x7f020014;
+        public static final int tlogo=0x7f020014;
+        public static final int todoenuno=0x7f020015;
     }
     public static final class id {
+        public static final int buttonContacts=0x7f08001e;
+        public static final int buttonEvents=0x7f08001b;
         public static final int eventsScroller=0x7f08000b;
         public static final int frameLayout1=0x7f080003;
         public static final int imageBITS=0x7f08000c;
@@ -45,6 +48,8 @@ public final class R {
         public static final int imageBRAINWAVE=0x7f08000e;
         public static final int imageBULLSBEARS=0x7f08000f;
         public static final int imageBYTES=0x7f080010;
+        public static final int imageButtonFb=0x7f08001c;
+        public static final int imageButtonWeb=0x7f08001d;
         public static final int imageDESIGNPRO=0x7f080011;
         public static final int imageELECTROCUTION=0x7f080012;
         public static final int imageENVISION=0x7f080013;
@@ -55,8 +60,9 @@ public final class R {
         public static final int imageSPAC=0x7f080018;
         public static final int imageTECHNOVISION=0x7f080019;
         public static final int imageTODOENUNO=0x7f08001a;
-        public static final int menu_contacts=0x7f08001b;
-        public static final int menu_events=0x7f08001c;
+        public static final int imageView1=0x7f08001f;
+        public static final int menu_contacts=0x7f080020;
+        public static final int menu_events=0x7f080021;
         public static final int quickContactBadgechairman=0x7f080000;
         public static final int quickContactBadgeheadcorpo=0x7f080002;
         public static final int quickContactBadgevicechairman=0x7f080001;
@@ -72,6 +78,7 @@ public final class R {
         public static final int activity_contacts=0x7f030000;
         public static final int activity_events=0x7f030001;
         public static final int activity_main_page=0x7f030002;
+        public static final int splash_screen=0x7f030003;
     }
     public static final class menu {
         public static final int activity_main_page=0x7f070000;
@@ -80,6 +87,8 @@ public final class R {
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
         public static final int menu_settings=0x7f040002;
+        public static final int troika_fb_page=0x7f040003;
+        public static final int troika_web_page=0x7f040004;
     }
     public static final class style {
         /** 

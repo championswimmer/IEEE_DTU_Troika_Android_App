@@ -74,7 +74,8 @@ public class Contacts extends Activity {
 	    		return true;
 	        }
 	    });
-		
+		RunCounters ContactRun = ((RunCounters)getApplicationContext());
+		if (!(ContactRun.HasContactRun())) {
 		final Toast addContacts = Toast.makeText(Contacts.this, "Long-click the contacts images to save to Phonebook \n\nOnce contact is saved, short-click to call/sms/mail", Toast.LENGTH_LONG);
 		addContacts.setGravity(Gravity.CENTER, addContacts.getXOffset() / 2, addContacts.getYOffset() / 2);
 		new CountDownTimer(2000, 1000)
@@ -84,12 +85,14 @@ public class Contacts extends Activity {
 		    public void onFinish() {addContacts.show();}
 
 		}.start();
+		}
+		ContactRun.RunContact();
 
 	}
 	
 	
 
-	@Override
+/*	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_main_page, menu);
@@ -113,7 +116,7 @@ public class Contacts extends Activity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
+*/
 	
 	@Override
 	public void onBackPressed() {

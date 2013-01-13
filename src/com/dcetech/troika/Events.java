@@ -52,35 +52,19 @@ public class Events extends Activity {
 		eventsScroller.postDelayed(new Runnable() {
 	        @Override
 	        public void run() {
-	        	eventsScroller.fling(3200);
+	        	eventsScroller.fling(2200);
+	        	eventsScroller.fling(600);
 	        	eventsScroller.fling(900);
-	        	eventsScroller.fling(1500);
 	        }
 	    }, 1000);
 		eventsScroller.postDelayed(new Runnable() {
 	        @Override
 	        public void run() {
-	        	eventsScroller.fling(-1700);
-	        	eventsScroller.fling(-800);
 	        	eventsScroller.fling(-1100);
+	        	eventsScroller.fling(-400);
+	        	eventsScroller.fling(-700);
 	        }
 	    }, 2000);
-		eventsScroller.postDelayed(new Runnable() {
-	        @Override
-	        public void run() {
-	        	eventsScroller.fling(1800);
-	        	eventsScroller.fling(1300);
-	        	eventsScroller.fling(600);
-	        }
-	    }, 3000);
-		eventsScroller.postDelayed(new Runnable() {
-	        @Override
-	        public void run() {
-	        	eventsScroller.fling(-1200);
-	        	eventsScroller.fling(-500);
-	        	eventsScroller.fling(-100);
-	        }
-	    }, 4000);
 		
 		ImageView BITS = (ImageView) findViewById(R.id.imageBITS);
 		BITS.setOnClickListener (new View.OnClickListener() { 
@@ -277,7 +261,8 @@ public class Events extends Activity {
 	        }
 	    });
 		
-
+		RunCounters EventRun = ((RunCounters)getApplicationContext());
+		if (!(EventRun.HasEventRun())) {
 		final Toast eventChooser = Toast.makeText(Events.this, "Click on any event to visit event website.\n\nLong-press on event to go to Facebook page", Toast.LENGTH_LONG);
 		eventChooser.setGravity(Gravity.CENTER, eventChooser.getXOffset() / 2, eventChooser.getYOffset() / 2);
 		new CountDownTimer(2000, 1000)
@@ -287,6 +272,8 @@ public class Events extends Activity {
 		    public void onFinish() {eventChooser.show();}
 
 		}.start();
+		}
+		EventRun.RunEvent();
 
 	}
 	

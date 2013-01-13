@@ -13,7 +13,8 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="16" />
+        android:targetSdkVersion="16"
+         />
     <permission android:name="android.permission.READ_CONTACTS"></permission>
     <permission android:name="android.permission.INTERNET"></permission>
     
@@ -21,7 +22,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:name="com.dcetech.troika.RunCounters" >
         <activity
             android:name="com.dcetech.troika.MainPage"
             android:label="@string/app_name" >
