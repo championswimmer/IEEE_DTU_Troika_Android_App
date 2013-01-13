@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.provider.ContactsContract;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.util.Log;
 import android.view.Gravity;
@@ -32,9 +33,17 @@ public class Events extends Activity {
 	}
 	
 	public void goToFb (String uri) {
+		try {
 		Uri fbUri = Uri.parse(uri);
         Intent launchFb = new Intent(Intent.ACTION_VIEW, fbUri);
         startActivity(launchFb);
+		}
+		catch (Exception e) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			  builder.setMessage("The Facebook app is needed to visit facebook pages");
+			  AlertDialog alert = builder.create();
+			  alert.show();
+		}
 	}
 	public void goToWeb (String uri) {
 		Uri webUri = Uri.parse(uri);
@@ -111,7 +120,7 @@ public class Events extends Activity {
 	        	goToFb(eventWebPages[4]);
 	        }
 	    });
-		BRAINWAVE.setOnLongClickListener (new View.OnLongClickListener() { 
+		BULLSBEARS.setOnLongClickListener (new View.OnLongClickListener() { 
 	        public boolean onLongClick(View v) {
 	        	goToFb(eventFbPages[4]);
 	        	return true;
@@ -278,7 +287,7 @@ public class Events extends Activity {
 	}
 	
 
-	@Override
+/*	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_main_page, menu);
@@ -301,7 +310,7 @@ public class Events extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 	
 	@Override
 	public void onBackPressed() {

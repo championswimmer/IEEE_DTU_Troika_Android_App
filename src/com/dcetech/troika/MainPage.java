@@ -4,13 +4,18 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 public class MainPage extends Activity {
 	
@@ -28,19 +33,57 @@ public class MainPage extends Activity {
         finish();
 	}
 	public void goToFb (View view) {
+		try {
 		Uri fbUri = Uri.parse(getResources().getString(R.string.troika_fb_page));
         Intent launchFb = new Intent(Intent.ACTION_VIEW, fbUri);
         startActivity(launchFb);
+		}
+		catch (Exception e) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			  builder.setMessage("The Facebook app is needed to visit facebook pages");
+			  AlertDialog alert = builder.create();
+			  alert.show();
+
+		}
 	}
 	public void goToWeb (View view) {
 		Uri webUri = Uri.parse(getResources().getString(R.string.troika_web_page));
         Intent launchWeb = new Intent(Intent.ACTION_VIEW, webUri);
         startActivity(launchWeb);
 	}
+	
+	public void launchVideo(boolean play) {
+		VideoView myVideoView = (VideoView)MainPage.this.findViewById(R.id.videoViewTeaser);
+        MediaController mediaController = new MediaController(MainPage.this);
+        try{
+            String vidpath = "android.resource://" + getPackageName() + "/" + R.raw.troika_teaser;
+            Log.d("TROIKA", vidpath);
+            myVideoView.setVideoURI(Uri.parse(vidpath));
+            myVideoView.setMediaController(mediaController);
+            if (play) {
+                myVideoView.requestFocus();
+                myVideoView.start();
+            }
+            else {
+            	myVideoView.seekTo(122000);
+            }
+        }
+        catch (Exception e){
+        	
+        	Log.d("TROIKA", "no video");
+            Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT);
+        }
+
+
+
+	}
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+
 		RunCounters MainRun = ((RunCounters)getApplicationContext());
 		if (!(MainRun.HasMainRun())) {
 		new CountDownTimer(3000, 1000)
@@ -54,15 +97,17 @@ public class MainPage extends Activity {
 			@Override
 			public void onFinish() {
 				setContentView(R.layout.activity_main_page);
-
-				
+				launchVideo(true);
 			}
 
 		}.start();
 		}
 		else {
 			setContentView(R.layout.activity_main_page);
+			launchVideo(false);
 		}
+
+
 		
 		backPress = 0;
 		MainRun.RunMain();

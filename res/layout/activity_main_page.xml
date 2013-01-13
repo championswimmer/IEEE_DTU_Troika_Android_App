@@ -3,9 +3,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
         
+    <RelativeLayout
+        android:id="@+id/TeaserLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+        
+                <VideoView
+                    android:id="@+id/videoViewTeaser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                    
+    </RelativeLayout>
     
-    <RelativeLayout 
-        android:layout_alignParentBottom="true"
+    
+    <LinearLayout
+        android:id="@+id/MainPageButtons" 
+        android:layout_below="@+id/TeaserLayout"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true" 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -14,7 +33,7 @@
         <Button
             android:id="@+id/buttonEvents"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignTop="@+id/imageButtonFb"
@@ -42,7 +61,7 @@
         <Button
             android:id="@+id/buttonContacts"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_alignTop="@+id/imageButtonWeb"
             android:layout_toRightOf="@+id/imageButtonWeb"
@@ -51,6 +70,6 @@
             android:paddingRight="10dp"
             android:text="Contact" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>
