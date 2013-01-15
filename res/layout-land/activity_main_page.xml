@@ -26,8 +26,7 @@
         android:layout_centerVertical="true" 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_marginLeft="60dp" 
-        android:layout_toRightOf="@+id/TeaserLayout"
+        android:layout_alignParentRight="true"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 

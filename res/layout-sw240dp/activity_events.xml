@@ -44,6 +44,33 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:src="@drawable/brainwave" />
+
+        <ImageView
+            android:id="@+id/imageBULLSBEARS"
+            android:layout_below="@id/imageBRAINWAVE"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/bullsbears" />
+    
+        <ImageView
+            android:id="@+id/imageBYTES"
+            android:layout_below="@id/imageBULLSBEARS"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/bytes" />
+        
+        <ImageView
+            android:id="@+id/imageDESIGNPRO"
+            android:layout_below="@id/imageBYTES"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/designpro" />
         
         <ImageView
             android:id="@+id/imageELECTROCUTION"
@@ -98,58 +125,31 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:src="@drawable/radix" />
-
-        <ImageView
-            android:id="@+id/imageTECHNOVISION"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/imageETHERAVATAR"
-            android:layout_centerHorizontal="true"
-            android:padding="12dp"
-            android:src="@drawable/technovision" />
-
+        
         <ImageView
             android:id="@+id/imageSPAC"
+            android:layout_below="@id/imageRADIX"
+            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/imageBRAINWAVE"
-            android:layout_alignLeft="@+id/imageTECHNOVISION"
             android:padding="12dp"
             android:src="@drawable/spac" />
-
+        
         <ImageView
-            android:id="@+id/imageBULLSBEARS"
+            android:id="@+id/imageTECHNOVISION"
+            android:layout_below="@id/imageSPAC"
+            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/imageMIST"
-            android:layout_alignLeft="@+id/imageSPAC"
             android:padding="12dp"
-            android:src="@drawable/bullsbears" />
-
-        <ImageView
-            android:id="@+id/imageBYTES"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/imageRADIX"
-            android:layout_alignLeft="@+id/imageBULLSBEARS"
-            android:padding="12dp"
-            android:src="@drawable/bytes" />
-
-        <ImageView
-            android:id="@+id/imageDESIGNPRO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/imageBRAINWAVE"
-            android:padding="12dp"
-            android:src="@drawable/designpro" />
-
+            android:src="@drawable/technovision" />
+        
         <ImageView
             android:id="@+id/imageTODOENUNO"
+            android:layout_below="@id/imageELECTROCUTION"
+            android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageBYTES"
-            android:layout_below="@+id/imageBYTES"
             android:padding="12dp"
             android:src="@drawable/todoenuno" />
         
