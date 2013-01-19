@@ -26,21 +26,21 @@
         </string-array>
     <string-array name="event_web_pages">
         <item>"http://troika.dcetech.com"</item>
-        <item >http://troika.dcetech.com/events/bbb.html</item>
-        <item >http://troika.dcetech.com/events/bbb.html</item>
-        <item >http://troika.dcetech.com/events/brainwave.html</item>
-        <item >http://troika.dcetech.com/events/bnb.html</item>
-        <item >http://troika.dcetech.com/events/bbb.html</item>
-        <item >http://troika.dcetech.com/events/design_pro.html</item>
-        <item >http://troika.dcetech.com/events/electrocution.html</item>
-        <item >http://troika.dcetech.com/events/envision.html</item>
-        <item >http://troika.dcetech.com/events/ether_avatar.html</item>
-        <item >http://troika.dcetech.com/events/junkyard.html</item>
-        <item >http://troika.dcetech.com/events/mist.html</item>
-        <item >http://troika.dcetech.com/events/radix.html</item>
-        <item >http://troika.dcetech.com/events/spac.html</item>
-        <item >http://troika.dcetech.com/events/technovision.html</item>
-        <item >http://troika.dcetech.com/events/TodoEnUno.html</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=bbb</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=bbb</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=brainwave</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=bnb</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=bbb</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=designpro</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=electrocution</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=envision</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=etheravatar</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=junkyard</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=mist</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=radix</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=spac</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=technovision</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=todoenuno</item>
         </string-array>
     
 </resources>
