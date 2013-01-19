@@ -29,15 +29,14 @@ public final class R {
         public static final int ic_contact_chairman=0x7f02000b;
         public static final int ic_contact_headcorpo=0x7f02000c;
         public static final int ic_contact_vicechairman=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int ic_launcher_transparent=0x7f02000f;
-        public static final int junkyard=0x7f020010;
-        public static final int mist=0x7f020011;
-        public static final int radix=0x7f020012;
-        public static final int spac=0x7f020013;
-        public static final int technovision=0x7f020014;
-        public static final int tlogo=0x7f020015;
-        public static final int todoenuno=0x7f020016;
+        public static final int ic_launcher_transparent=0x7f02000e;
+        public static final int junkyard=0x7f02000f;
+        public static final int mist=0x7f020010;
+        public static final int radix=0x7f020011;
+        public static final int spac=0x7f020012;
+        public static final int technovision=0x7f020013;
+        public static final int todoenuno=0x7f020014;
+        public static final int troika_splash=0x7f020015;
     }
     public static final class id {
         public static final int MainPageButtons=0x7f09001d;
