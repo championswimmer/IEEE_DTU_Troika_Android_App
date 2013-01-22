@@ -1,26 +1,27 @@
 package com.dcetech.troika;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
 public class MainPage extends Activity {
 	
 	public int backPress;
-
+	private Dialog dialog;
 	
 	public void goToEvents (View view) {
 		Intent events = new Intent(MainPage.this, Events.class);
@@ -71,7 +72,7 @@ public class MainPage extends Activity {
         catch (Exception e){
         	
         	Log.d("TROIKA", "no video");
-            Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show();
         }
 
 
@@ -113,7 +114,7 @@ public class MainPage extends Activity {
 		MainRun.RunMain();
 	
 	}
-/*
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -126,20 +127,13 @@ public class MainPage extends Activity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.menu_contacts:
-            	Intent contacts = new Intent(MainPage.this, Contacts.class);
-                startActivity(contacts);
-                finish();
+            	showAbout();
             	return true;
-            case R.id.menu_events:
-            	Intent events = new Intent(MainPage.this, Events.class);
-                startActivity (events);
-                finish();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-*/    
+ 
 	public Toast exiter;
    
     @Override
@@ -156,5 +150,19 @@ public class MainPage extends Activity {
     		break;
     	}
     	}
+    }
+    
+    private void showAbout(){
+    	dialog = new Dialog(MainPage.this);
+		dialog.setContentView(R.layout.about);
+		dialog.setTitle("Title...");
+		TextView text = (TextView) dialog.findViewById(R.id.aboutContent);
+		text.setText("Android app by Troika 2013 \n Code hosted on https://github.com/championswimmer/com.dcetech.troika");
+
+		dialog.show();
+    }
+    
+    public void closeAbout(View v){
+    	dialog.dismiss();
     }
 }

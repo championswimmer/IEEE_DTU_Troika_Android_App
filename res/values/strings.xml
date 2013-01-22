@@ -6,6 +6,7 @@
     <string name="menu_settings">Settings</string>
     <string name="troika_fb_page">"fb://page/447416048656906"</string>
     <string name="troika_web_page">""http://troika.dcetech.com</string>
+
     <string-array name="event_fb_pages">
         <item>"fb://"</item>
         <item>fb://page/512087695498114</item>
@@ -23,24 +24,26 @@
         <item>fb://page/</item>
         <item>fb://page/125379737629870</item>
         <item>fb://page/394434650638892</item>
-        </string-array>
+    </string-array>
     <string-array name="event_web_pages">
         <item>"http://troika.dcetech.com"</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=bbb</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=bbb</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=brainwave</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=bnb</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=bbb</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=designpro</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=electrocution</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=envision</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=etheravatar</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=junkyard</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=mist</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=radix</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=spac</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=technovision</item>
-        <item >http://m.troika.dcetech.com/events.php?eventName=todoenuno</item>
-        </string-array>
-    
+        <item>http://m.troika.dcetech.com/events.php?eventName=bbb</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=bbb</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=brainwave</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=bnb</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=bbb</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=designpro</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=electrocution</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=envision</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=etheravatar</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=junkyard</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=mist</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=radix</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=spac</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=technovision</item>
+        <item>http://m.troika.dcetech.com/events.php?eventName=todoenuno</item>
+    </string-array>
+
+    <string name="title_activity_about">About</string>
+
 </resources>

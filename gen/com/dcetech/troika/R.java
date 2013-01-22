@@ -39,52 +39,57 @@ public final class R {
         public static final int troika_splash=0x7f020015;
     }
     public static final class id {
-        public static final int MainPageButtons=0x7f09001d;
-        public static final int TeaserLayout=0x7f09001b;
-        public static final int buttonContacts=0x7f090021;
-        public static final int buttonEvents=0x7f09001e;
-        public static final int eventsScroller=0x7f09000b;
-        public static final int frameLayout1=0x7f090003;
-        public static final int imageBITS=0x7f09000c;
-        public static final int imageBOTS=0x7f09000d;
-        public static final int imageBRAINWAVE=0x7f09000e;
-        public static final int imageBULLSBEARS=0x7f09000f;
-        public static final int imageBYTES=0x7f090010;
-        public static final int imageButtonFb=0x7f09001f;
-        public static final int imageButtonWeb=0x7f090020;
-        public static final int imageDESIGNPRO=0x7f090011;
-        public static final int imageELECTROCUTION=0x7f090012;
-        public static final int imageENVISION=0x7f090013;
-        public static final int imageETHERAVATAR=0x7f090014;
-        public static final int imageJUNKYARD=0x7f090015;
-        public static final int imageMIST=0x7f090016;
-        public static final int imageRADIX=0x7f090017;
-        public static final int imageSPAC=0x7f090018;
-        public static final int imageTECHNOVISION=0x7f090019;
-        public static final int imageTODOENUNO=0x7f09001a;
-        public static final int imageView1=0x7f090022;
-        public static final int menu_contacts=0x7f090023;
-        public static final int menu_events=0x7f090024;
-        public static final int quickContactBadgechairman=0x7f090000;
-        public static final int quickContactBadgeheadcorpo=0x7f090002;
-        public static final int quickContactBadgevicechairman=0x7f090001;
-        public static final int textIEEEDTU=0x7f090006;
-        public static final int textViewChairman=0x7f090005;
-        public static final int textViewHeadCorpo=0x7f09000a;
-        public static final int textViewIshaanMalhotra=0x7f090004;
-        public static final int textViewViceChairman=0x7f090008;
-        public static final int textViewheadcorpo=0x7f090009;
-        public static final int textViewvicechairman=0x7f090007;
-        public static final int videoViewTeaser=0x7f09001c;
+        public static final int MainPageButtons=0x7f09001f;
+        public static final int TeaserLayout=0x7f09001d;
+        public static final int aboutContent=0x7f090000;
+        public static final int aboutOK=0x7f090001;
+        public static final int buttonContacts=0x7f090023;
+        public static final int buttonEvents=0x7f090020;
+        public static final int eventsScroller=0x7f09000d;
+        public static final int frameLayout1=0x7f090005;
+        public static final int imageBITS=0x7f09000e;
+        public static final int imageBOTS=0x7f09000f;
+        public static final int imageBRAINWAVE=0x7f090010;
+        public static final int imageBULLSBEARS=0x7f090011;
+        public static final int imageBYTES=0x7f090012;
+        public static final int imageButtonFb=0x7f090021;
+        public static final int imageButtonWeb=0x7f090022;
+        public static final int imageDESIGNPRO=0x7f090013;
+        public static final int imageELECTROCUTION=0x7f090014;
+        public static final int imageENVISION=0x7f090015;
+        public static final int imageETHERAVATAR=0x7f090016;
+        public static final int imageJUNKYARD=0x7f090017;
+        public static final int imageMIST=0x7f090018;
+        public static final int imageRADIX=0x7f090019;
+        public static final int imageSPAC=0x7f09001a;
+        public static final int imageTECHNOVISION=0x7f09001b;
+        public static final int imageTODOENUNO=0x7f09001c;
+        public static final int imageView1=0x7f090024;
+        public static final int menu_contacts=0x7f090026;
+        public static final int menu_settings=0x7f090025;
+        public static final int quickContactBadgechairman=0x7f090002;
+        public static final int quickContactBadgeheadcorpo=0x7f090004;
+        public static final int quickContactBadgevicechairman=0x7f090003;
+        public static final int textIEEEDTU=0x7f090008;
+        public static final int textViewChairman=0x7f090007;
+        public static final int textViewHeadCorpo=0x7f09000c;
+        public static final int textViewIshaanMalhotra=0x7f090006;
+        public static final int textViewViceChairman=0x7f09000a;
+        public static final int textViewheadcorpo=0x7f09000b;
+        public static final int textViewvicechairman=0x7f090009;
+        public static final int videoViewTeaser=0x7f09001e;
     }
     public static final class layout {
-        public static final int activity_contacts=0x7f030000;
-        public static final int activity_events=0x7f030001;
-        public static final int activity_main_page=0x7f030002;
-        public static final int splash_screen=0x7f030003;
+        public static final int about=0x7f030000;
+        public static final int activity_about=0x7f030001;
+        public static final int activity_contacts=0x7f030002;
+        public static final int activity_events=0x7f030003;
+        public static final int activity_main_page=0x7f030004;
+        public static final int splash_screen=0x7f030005;
     }
     public static final class menu {
-        public static final int activity_main_page=0x7f080000;
+        public static final int activity_about=0x7f080000;
+        public static final int activity_main_page=0x7f080001;
     }
     public static final class raw {
         public static final int troika_teaser=0x7f040000;
@@ -93,6 +98,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int menu_settings=0x7f050002;
+        public static final int title_activity_about=0x7f050005;
         public static final int troika_fb_page=0x7f050003;
         public static final int troika_web_page=0x7f050004;
     }
