@@ -86,12 +86,6 @@
 
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
-
-        <activity
-            android:name="com.dcetech.troika.About"
-            android:label="@string/title_activity_about"
-            android:parentActivityName="com.dcetech.troika.MainPage" >
-        </activity>
     </application>
 
 </manifest>
