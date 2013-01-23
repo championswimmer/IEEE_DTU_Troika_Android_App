@@ -3,7 +3,6 @@ package com.dcetech.troika;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -84,6 +82,8 @@ public class MainPage extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		
+		
 
 		RunCounters MainRun = ((RunCounters)getApplicationContext());
 		if (!(MainRun.HasMainRun())) {
@@ -112,6 +112,8 @@ public class MainPage extends Activity {
 		
 		backPress = 0;
 		MainRun.RunMain();
+		
+		
 	
 	}
 
@@ -155,14 +157,7 @@ public class MainPage extends Activity {
     private void showAbout(){
     	dialog = new Dialog(MainPage.this);
 		dialog.setContentView(R.layout.about);
-		dialog.setTitle("Title...");
-		TextView text = (TextView) dialog.findViewById(R.id.aboutContent);
-		text.setText("Android app by Troika 2013 \n Code hosted on https://github.com/championswimmer/com.dcetech.troika");
-
+		dialog.setTitle("About");
 		dialog.show();
-    }
-    
-    public void closeAbout(View v){
-    	dialog.dismiss();
     }
 }
