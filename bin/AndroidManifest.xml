@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dcetech.troika"
-    android:versionCode="052"
-    android:versionName="0.5.2" >
+    android:versionCode="050"
+    android:versionName="0.5.0" >
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
