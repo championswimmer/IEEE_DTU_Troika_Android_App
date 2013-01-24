@@ -41,11 +41,11 @@ public final class R {
     public static final class id {
         public static final int MainPageButtons=0x7f090020;
         public static final int TeaserLayout=0x7f09001e;
-        public static final int aboutContent=0x7f090000;
-        public static final int aboutContent2=0x7f090001;
-        public static final int aboutContent3=0x7f090002;
+        public static final int aboutL1=0x7f090000;
+        public static final int aboutL2=0x7f090001;
         public static final int buttonContacts=0x7f090024;
         public static final int buttonEvents=0x7f090021;
+        public static final int closeAbout=0x7f090002;
         public static final int eventsScroller=0x7f09000e;
         public static final int frameLayout1=0x7f090006;
         public static final int imageBITS=0x7f09000f;

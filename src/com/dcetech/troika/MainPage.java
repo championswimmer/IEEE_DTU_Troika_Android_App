@@ -7,10 +7,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -129,7 +133,8 @@ public class MainPage extends Activity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.menu_contacts:
-            	showAbout();
+            	CustomDialogClass cdd=new CustomDialogClass(MainPage.this);
+            	cdd.show(); 
             	return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -154,10 +159,41 @@ public class MainPage extends Activity {
     	}
     }
     
-    private void showAbout(){
-    	dialog = new Dialog(MainPage.this);
-		dialog.setContentView(R.layout.about);
-		dialog.setTitle("About");
-		dialog.show();
+    public class CustomDialogClass extends Dialog implements
+    android.view.View.OnClickListener {
+
+        public Activity c;
+        public Dialog d;
+        public Button yes, no;
+
+        public CustomDialogClass(Activity a) {
+         super(a);
+         // TODO Auto-generated constructor stub
+         this.c = a;
     }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.about);
+        TextView aboutL1 = (TextView) findViewById(R.id.aboutL2);
+        aboutL1.setText(Html.fromHtml("This app is open source.<br>The source code is hosted on <a href=\"http://github.com/championswimmer/com.dcetech.troika\">Github</a> "));
+        aboutL1.setMovementMethod(LinkMovementMethod.getInstance());
+        yes = (Button) findViewById(R.id.closeAbout);
+        yes.setOnClickListener(this);
+     }
+
+     @Override
+     public void onClick(View v) {
+        switch (v.getId()) {
+        case R.id.closeAbout:
+            dismiss();
+            break;
+        default:
+            break;
+        }
+        dismiss();
+     } 
+   }
 }
