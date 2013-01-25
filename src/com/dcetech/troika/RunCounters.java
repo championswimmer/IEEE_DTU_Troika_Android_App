@@ -1,8 +1,7 @@
 package com.dcetech.troika;
 
-import java.util.ArrayList;
-import java.util.List;
 import android.app.Application;
+
 
 public class RunCounters extends Application {
 	
