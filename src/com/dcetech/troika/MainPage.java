@@ -177,11 +177,12 @@ public class MainPage extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.about);
         TextView aboutL2 = (TextView) findViewById(R.id.aboutL2);
-        TextView aboutL3 = (TextView) findViewById(R.id.aboutL3);
-        aboutL2.setText(Html.fromHtml("This app is open source.<br>The source code is hosted on <a href=\"http://github.com/championswimmer/com.dcetech.troika\">Github</a> "));
+        aboutL2.setText(Html.fromHtml("<a href=\"https://www.facebook.com/TroikaIeeeDTU\">Troika</a> is the annual technical festival of IEEE DTU student branch. IEEE student branch of Delhi Technological University (formerly Delhi College of Engineering) is the oldest student branch in IEEE's region 10 (Asia Pacific)."));
         aboutL2.setMovementMethod(LinkMovementMethod.getInstance());
-        aboutL3.setText(Html.fromHtml("Developers :<br><a href=\"http://www.facebook.com/championswimmer\">Arnav Gupta</a><br><a href=\"http://facebook.com/OmerJerk\">Umair Khan</a>"));
+        TextView aboutL3 = (TextView) findViewById(R.id.aboutL3);        
+        aboutL3.setText(Html.fromHtml("This app is open source.<br>The source code is hosted on <a href=\"http://github.com/championswimmer/com.dcetech.troika\">Github</a>. "));
         aboutL3.setMovementMethod(LinkMovementMethod.getInstance());
+        
         yes = (Button) findViewById(R.id.closeAbout);
         yes.setOnClickListener(this);
      }

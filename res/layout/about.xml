@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:text="Android app by IEEE DTU"
+        android:text="Android app for TROIKA"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold" >
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/aboutL2"
         android:clickable="true"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="7dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
