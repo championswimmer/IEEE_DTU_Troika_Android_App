@@ -23,7 +23,6 @@ import android.widget.VideoView;
 public class MainPage extends Activity {
 	
 	public int backPress;
-	private Dialog dialog;
 	
 	public void goToEvents (View view) {
 		Intent events = new Intent(MainPage.this, Events.class);
@@ -177,9 +176,12 @@ public class MainPage extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.about);
-        TextView aboutL1 = (TextView) findViewById(R.id.aboutL2);
-        aboutL1.setText(Html.fromHtml("This app is open source.<br>The source code is hosted on <a href=\"http://github.com/championswimmer/com.dcetech.troika\">Github</a> "));
-        aboutL1.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView aboutL2 = (TextView) findViewById(R.id.aboutL2);
+        TextView aboutL3 = (TextView) findViewById(R.id.aboutL3);
+        aboutL2.setText(Html.fromHtml("This app is open source.<br>The source code is hosted on <a href=\"http://github.com/championswimmer/com.dcetech.troika\">Github</a> "));
+        aboutL2.setMovementMethod(LinkMovementMethod.getInstance());
+        aboutL3.setText(Html.fromHtml("Developers :<br><a href=\"http://www.facebook.com/championswimmer\">Arnav Gupta</a><br><a href=\"http://facebook.com/OmerJerk\">Umair Khan</a>"));
+        aboutL3.setMovementMethod(LinkMovementMethod.getInstance());
         yes = (Button) findViewById(R.id.closeAbout);
         yes.setOnClickListener(this);
      }
