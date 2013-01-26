@@ -1,22 +1,14 @@
 package com.dcetech.troika;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.provider.ContactsContract;
-import android.provider.ContactsContract.PhoneLookup;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.QuickContactBadge;
 import android.widget.Toast;
-import android.util.Log;
-import android.database.Cursor;
-import android.content.ContextWrapper;
 
 
 public class Contacts extends Activity {
