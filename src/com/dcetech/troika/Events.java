@@ -270,6 +270,32 @@ public class Events extends Activity {
 	        }
 	    });
 		
+		ImageView ENERGIZE = (ImageView) findViewById(R.id.imageENERGIZE);
+		ENERGIZE.setOnClickListener (new View.OnClickListener() { 
+	        public void onClick(View v) {
+	        	goToFb(eventWebPages[16]);
+	        }
+	    });
+		ENERGIZE.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[16]);
+	        	return true;
+	        }
+	    });
+		
+		ImageView INSPIRONATURE = (ImageView) findViewById(R.id.imageINSPIRONATURE);
+		INSPIRONATURE.setOnClickListener (new View.OnClickListener() { 
+	        public void onClick(View v) {
+	        	goToFb(eventWebPages[17]);
+	        }
+	    });
+		INSPIRONATURE.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[17]);
+	        	return true;
+	        }
+	    });
+		
 		RunCounters EventRun = ((RunCounters)getApplicationContext());
 		if (!(EventRun.HasEventRun())) {
 		final Toast eventChooser = Toast.makeText(Events.this, "Click on any event to visit event website.\n\nLong-press on event to go to Facebook page", Toast.LENGTH_LONG);

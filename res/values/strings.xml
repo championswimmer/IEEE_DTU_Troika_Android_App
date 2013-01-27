@@ -23,6 +23,8 @@
         <item>fb://page/</item>
         <item>fb://page/125379737629870</item>
         <item>fb://page/394434650638892</item>
+        <item>fb://page/</item>
+        <item>fb://page/</item>
         </string-array>
     <string-array name="event_web_pages">
         <item>"http://troika.dcetech.com"</item>
@@ -41,6 +43,8 @@
         <item >http://m.troika.dcetech.com/events.php?eventName=spac</item>
         <item >http://m.troika.dcetech.com/events.php?eventName=technovision</item>
         <item >http://m.troika.dcetech.com/events.php?eventName=todoenuno</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=energize</item>
+        <item >http://m.troika.dcetech.com/events.php?eventName=inspironature</item>
         </string-array>
     
 </resources>
