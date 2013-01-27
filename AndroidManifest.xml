@@ -96,6 +96,7 @@
     package="com.dcetech.troika"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     android:versionCode="060"
     android:versionName="0.6.0" >
 =======
@@ -106,6 +107,10 @@
     android:versionCode="055"
     android:versionName="0.5.5" >
 >>>>>>> 77dab43... Add Energize and Inspironature
+=======
+    android:versionCode="060"
+    android:versionName="0.6.0" >
+>>>>>>> 23df56e... version 0.6.0
 <uses-permission android:name="android.permission.READ_CONTACTS" />
 <uses-permission android:name="android.permission.INTERNET" />
     
