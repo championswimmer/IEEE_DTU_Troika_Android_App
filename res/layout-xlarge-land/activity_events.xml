@@ -71,6 +71,15 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:src="@drawable/junkyard" />
+        
+        <ImageView
+            android:id="@+id/imageENERGIZE"
+            android:layout_below="@id/imageJUNKYARD"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/energize" />
 
         <ImageView
             android:id="@+id/imageSPAC"
@@ -98,6 +107,15 @@
             android:layout_below="@+id/imageBRAINWAVE"
             android:padding="12dp"
             android:src="@drawable/designpro" />
+        
+        <ImageView
+            android:id="@+id/imageINSPIRONATURE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageDESIGNPRO"
+            android:padding="12dp"
+            android:src="@drawable/inspironature" />
 
         <ImageView
             android:id="@+id/imageTODOENUNO"

@@ -1,8 +1,106 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dcetech.troika"
-    android:versionCode="050"
-    android:versionName="0.5.0" >
+    android:versionCode="054"
+    android:versionName="0.5.4" >
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <permission android:name="android.permission.READ_CONTACTS" >
+    </permission>
+    <permission android:name="android.permission.INTERNET" >
+    </permission>
+
+    <application
+        android:name="com.dcetech.troika.RunCounters"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_transparent"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dcetech.troika.MainPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dcetech.troika.Contacts"
+            android:label="Contacts" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dcetech.troika.Events"
+            android:label="Events" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <intent-filter android:priority="100" >
+            <action android:name="android.intent.action.SENDTO" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:scheme="sms" />
+            <data android:scheme="smsto" />
+        </intent-filter>
+        <intent-filter android:priority="100" >
+            <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:scheme="tel" />
+        </intent-filter>
+        <intent-filter android:priority="100" >
+            <action android:name="android.intent.action.READ_CONTACTS" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter android:priority="100" >
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </application>
+
+</manifest>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dcetech.troika"
+<<<<<<< HEAD
+    android:versionCode="060"
+    android:versionName="0.6.0" >
+=======
+    android:versionCode="055"
+    android:versionName="0.5.5" >
+>>>>>>> 77dab43... Add Energize and Inspironature
 <uses-permission android:name="android.permission.READ_CONTACTS" />
 <uses-permission android:name="android.permission.INTERNET" />
     
@@ -77,3 +175,4 @@
     </application>
 
 </manifest>
+>>>>>>> 23df56e... version 0.6.0

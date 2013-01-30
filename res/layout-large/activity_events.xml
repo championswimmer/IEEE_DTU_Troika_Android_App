@@ -80,6 +80,15 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:src="@drawable/electrocution" />
+        
+        <ImageView
+            android:id="@+id/imageENERGIZE"
+            android:layout_below="@id/imageELECTROCUTION"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/energize" />
 
         <ImageView
             android:id="@+id/imageENVISION"
@@ -143,10 +152,19 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:src="@drawable/technovision" />
+
+        <ImageView
+            android:id="@+id/imageINSPIRONATURE"
+            android:layout_below="@id/imageTECHNOVISION"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/inspironature" />
         
         <ImageView
             android:id="@+id/imageTODOENUNO"
-            android:layout_below="@id/imageELECTROCUTION"
+            android:layout_below="@id/imageENERGIZE"
             android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

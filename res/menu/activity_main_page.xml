@@ -3,11 +3,6 @@
     <item
         android:id="@+id/menu_contacts"
         android:orderInCategory="100"
-        android:title="Contacts"/>
-
-        <item
-        android:id="@+id/menu_events"
-        android:orderInCategory="100"
-        android:title="Events"/>
+        android:title="About"/>
     
 </menu>

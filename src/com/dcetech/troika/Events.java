@@ -3,23 +3,14 @@ package com.dcetech.troika;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.provider.ContactsContract;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.util.Log;
 import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.Toast;
-import android.widget.ViewFlipper;
 
 
 public class Events extends Activity {
@@ -266,6 +257,32 @@ public class Events extends Activity {
 		TODOENUNO.setOnLongClickListener (new View.OnLongClickListener() { 
 	        public boolean onLongClick(View v) {
 	        	goToFb(eventFbPages[15]);
+	        	return true;
+	        }
+	    });
+		
+		ImageView ENERGIZE = (ImageView) findViewById(R.id.imageENERGIZE);
+		ENERGIZE.setOnClickListener (new View.OnClickListener() { 
+	        public void onClick(View v) {
+	        	goToFb(eventWebPages[16]);
+	        }
+	    });
+		ENERGIZE.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[16]);
+	        	return true;
+	        }
+	    });
+		
+		ImageView INSPIRONATURE = (ImageView) findViewById(R.id.imageINSPIRONATURE);
+		INSPIRONATURE.setOnClickListener (new View.OnClickListener() { 
+	        public void onClick(View v) {
+	        	goToFb(eventWebPages[17]);
+	        }
+	    });
+		INSPIRONATURE.setOnLongClickListener (new View.OnLongClickListener() { 
+	        public boolean onLongClick(View v) {
+	        	goToFb(eventFbPages[17]);
 	        	return true;
 	        }
 	    });
