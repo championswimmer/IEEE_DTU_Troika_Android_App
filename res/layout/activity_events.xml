@@ -163,7 +163,7 @@
             android:src="@drawable/inspironature" />
         
         <ImageView
-            android:id="@+id/imageTODOENUNO"
+            android:id="@+id/imageTODOENUNO" 
             android:layout_below="@id/imageENERGIZE"
             android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
