@@ -5,7 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="troika_fb_page">"fb://page/447416048656906"</string>
-    <string name="troika_web_page">""http://troika.dcetech.com</string>
+    <string name="troika_web_page">"http://troika.dcetech.com"</string>
+    <string name="mist_about">"TROIKA 2013\nby IEEE DTU"</string>
+    <string name="mist_about_content">"TROIKA, a chariot drawn by three horses abreast, is a quintessential symbol of progress and advancement. Everything about TROIKA, the annual technological fiesta of IEEE DTU, while glittering in full glory, offers something even superior to gold- a purpose. This is the higher purpose of discovering oneness with the aim of advancing humanity through the path of science and technology. It seeks to celebrate the inquisitive nature of human mind, man’s curiosity and his heart’s perseverance to find answers that made the world what it is today, the tendency of human soul which yearns to answer the question “Why?” The answer is rubber dinghy rapids, every time it is pitted against the seemingly infallible. Enthusing life in science aficionados and stirring their souls for almost two decades, such a higher purpose forms the strong foundation of TROIKA. Come. Celebrate with TROIKA 2013. And be a part of the legacy!"</string>
     <string-array name="event_fb_pages">
         <item>"fb://"</item>
         <item>fb://page/512087695498114</item>

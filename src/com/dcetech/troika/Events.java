@@ -49,12 +49,15 @@ public class Events extends Activity {
 		Uri webUri = Uri.parse(uri);
         Intent launchWeb = new Intent(Intent.ACTION_VIEW, webUri);
         startActivity(launchWeb);
-	}
+	}	
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_events);
+		
+		
 		
 		loadURLs();
 		eventsScroller=((ScrollView) findViewById(R.id.eventsScroller));

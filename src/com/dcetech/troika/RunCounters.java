@@ -9,6 +9,7 @@ public class RunCounters extends Application {
 	private int MainRunCounter = 0;
 	public int EventRunCounter = 0;
 	public int ContactRunCounter = 0;
+	public int MistSeenCounter = 0;
 	
 	public boolean HasMainRun (){
 		if (MainRunCounter == 0) {
@@ -47,6 +48,19 @@ public class RunCounters extends Application {
 
 	public void RunContact () {
 		ContactRunCounter++;
+	}
+	
+	public boolean HasSeenMist (){
+		if (MistSeenCounter == 0) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	public void SeenMist () {
+		MistSeenCounter++;
 	}
 	
 	public void ResetCounters () {

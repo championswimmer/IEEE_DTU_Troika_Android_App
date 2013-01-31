@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -77,14 +78,34 @@ public class MainPage extends Activity {
 
 
 	}
-	
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 
-		RunCounters MainRun = ((RunCounters)getApplicationContext());
+		final RunCounters MainRun = ((RunCounters)getApplicationContext());
+		
+		AlertDialog.Builder mist_builder = new AlertDialog.Builder(this);
+		mist_builder.setTitle(R.string.mist_about);
+		mist_builder.setMessage(R.string.mist_about_content);
+		mist_builder.setCancelable(false);
+		mist_builder.setPositiveButton("Don't show again", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                MainRun.SeenMist();
+                launchVideo(true);
+            }
+        });
+		mist_builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+            	launchVideo(true);
+                // Keep seeing this dialog and the video until you get smart enough to click the other option
+            }
+        });
+		  final AlertDialog mist_alert = mist_builder.create();
+		  
+		  
 		if (!(MainRun.HasMainRun())) {
 		new CountDownTimer(3000, 1000)
 		{
@@ -96,24 +117,33 @@ public class MainPage extends Activity {
 			}
 			@Override
 			public void onFinish() {
+				
 				setContentView(R.layout.activity_main_page);
-				launchVideo(true);
+				if (!(MainRun.HasSeenMist())) {
+					  mist_alert.show();
+					  }
+				else {
+					launchVideo(true);
+				}
+				
 			}
 
 		}.start();
 		}
 		else {
+			if (!(MainRun.HasSeenMist())) {
+				  mist_alert.show();
+				  }
 			setContentView(R.layout.activity_main_page);
 			launchVideo(false);
 		}
 
 
-		
 		backPress = 0;
 		MainRun.RunMain();
 	
 	}
-/*
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -125,21 +155,22 @@ public class MainPage extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.menu_contacts:
-            	Intent contacts = new Intent(MainPage.this, Contacts.class);
-                startActivity(contacts);
-                finish();
+            case R.id.menu_about:
+            	AlertDialog.Builder mist_builder = new AlertDialog.Builder(this);
+        		mist_builder.setTitle("TROIKA 2013\nby IEEE DTU");
+        		mist_builder.setMessage("TROIKA, a chariot drawn by three horses abreast, is a quintessential symbol of progress and advancement. Everything about TROIKA, the annual technological fiesta of IEEE DTU, while glittering in full glory, offers something even superior to gold- a purpose. This is the higher purpose of discovering oneness with the aim of advancing humanity through the path of science and technology. It seeks to celebrate the inquisitive nature of human mind, man’s curiosity and his heart’s perseverance to find answers that made the world what it is today, the tendency of human soul which yearns to answer the question “Why?” The answer is rubber dinghy rapids, every time it is pitted against the seemingly infallible. Enthusing life in science aficionados and stirring their souls for almost two decades, such a higher purpose forms the strong foundation of TROIKA. Come. Celebrate with TROIKA 2013. And be a part of the legacy!");
+        		mist_builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                    }
+                });
+        		AlertDialog mist_alert = mist_builder.create();
+            	mist_alert.show();
             	return true;
-            case R.id.menu_events:
-            	Intent events = new Intent(MainPage.this, Events.class);
-                startActivity (events);
-                finish();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-*/    
+    
 	public Toast exiter;
    
     @Override
