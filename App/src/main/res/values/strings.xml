@@ -13,7 +13,7 @@
     <string name="contact_fragment_placeholder">Contact Fragment</string>
     <string name="event_fragment_placeholder">Events Fragment</string>
     <string name="register_fragment_placeholder">Register Fragment</string>
-
+    
     <string-array name="event_titles">
         <item>bits</item>
         <item>bots</item>
@@ -54,75 +54,38 @@
 
     <string-array name="event_descriptions">
         <!--bits-->
-        <item>"Most good programmers do programming not because they expect to get paid or get
-            adulation by the public, but because it is fun to program.
-            -Linus Torvalds
+        <item>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.
+-Linus Torvalds
 
-            So put yourself in front of your prized laptops and desktops, revise your programming
-            skills and let in a breath of fresh air as TROIKA 2014 brings to you BITS- The on the
-            spot programming competition.
+So put yourself in front of your prized laptops and desktops, revise your programming skills and let in a breath of fresh air as TROIKA 2014 brings to you BITS- The on the spot programming competition.
 
-            To keep alive the avid programmer inside you, this contest is back and will prove to
-            satisfy your programming cravings and examine your knowledge of programming languages
-            like C, C++ and JAVA in a specified limited time frame as well.
+To keep alive the avid programmer inside you, this contest is back and will prove to satisfy your programming cravings and examine your knowledge of programming languages like C, C++ and JAVA in a specified limited time frame as well.
 
-            Your capability and creativity will be rigorously tested not only on a single level but
-            on a multitude of levels. This contest will involve a combination of various rounds
-            which will include different problem statements. BITS is a golden opportunity for the
-            geek inside you to create, innovate and produce avant-garde programs.
+Your capability and creativity will be rigorously tested not only on a single level but on a multitude of levels. This contest will involve a combination of various rounds which will include different problem statements. BITS is a golden opportunity for the geek inside you to create, innovate and produce avant-garde programs.
 
-            Ready? On your marks, get, set.. GO!"
-        </item>
+Ready? On your marks, get, set.. GO!"</item>
         <!--bots-->
         <item>"While ( ! ( succeed=try () ) ) ;
 
-            Do you consider yourself as having the capability to design a programme that will defend
-            you from the blows and punches of the opponent's programme efficaciously and fight back
-            at the same time with that same programme at your rescue?
+Do you consider yourself as having the capability to design a programme that will defend you from the blows and punches of the opponent's programme efficaciously and fight back at the same time with that same programme at your rescue?
 
-            If your answer is a yes, then prepare yourselves for the ultimate programming
-            extravaganza as TROIKA 2014 presents to you BOTS- the AI gaming challenge. This
-            competition utilizes your ability to formulate your gaming strategy not once but again
-            and again, consider the pros and cons that are involved with each decisive move of yours
-            and devise a calculative plan that will become game changing not only for you but your
-            opponent as well.
+If your answer is a yes, then prepare yourselves for the ultimate programming extravaganza as TROIKA 2014 presents to you BOTS- the AI gaming challenge. This competition utilizes your ability to formulate your gaming strategy not once but again and again, consider the pros and cons that are involved with each decisive move of yours and devise a calculative plan that will become game changing not only for you but your opponent as well.
 
-            Apply your coding wit and grit to develop a program that not only runs with perfection
-            but rather runs over the program of your adversary and hence, defeats it to emerge
-            victorious in the end. Effective scheming and planning along with error free and
-            effective programming is all that's required.
+Apply your coding wit and grit to develop a program that not only runs with perfection but rather runs over the program of your adversary and hence, defeats it to emerge victorious in the end. Effective scheming and planning along with error free and effective programming is all that's required.
 
-            So are you prepped up for some action?"
-        </item>
+So are you prepped up for some action?"</item>
         <!--brainwave-->
-        <item>"Are you enthralled by the fact that how a single click of yours opens up a kinky
-            &amp; glittery world of gadgetry, that you love to dwell in for hours???
+        <item>"Are you enthralled by the fact that how a single click of yours opens up a kinky &amp; glittery world of gadgetry, that you love to dwell in for hours???
 
-            If hitherto your head nods in a yes, then with certainty I say WAVES of catechism
-            pertaining to the world of embedded systems would barrage your BRAIN.
+If hitherto your head nods in a yes, then with certainty I say WAVES of catechism pertaining to the world of embedded systems would barrage your BRAIN.
 
-            BRAINWAVE is the destination you must set for yourself. BRAINWAVE is the ultimate
-            hardware design challenge with a special focus on the implementation and augmentation
-            gratifying your Electronics appetite to a level of surfeit. The moment has dawned upon
-            once gain...and its time you showcase your brain and win waves of accolades by playing
-            with that small gizmo that you have, the MICROCONTROLLER! "
-        </item>
+BRAINWAVE is the destination you must set for yourself. BRAINWAVE is the ultimate hardware design challenge with a special focus on the implementation and augmentation gratifying your Electronics appetite to a level of surfeit. The moment has dawned upon once gain...and its time you showcase your brain and win waves of accolades by playing with that small gizmo that you have, the MICROCONTROLLER! "</item>
         <!--bytes-->
-        <item>"Crack your knuckles and get yourselves geared up for BYTES- The online coding contest
-            brought to you by TROIKA 2014. If you are easily enticed by challenging programmes,
-            tempted to crack difficult algorithms and consider programming as easy as your mother
-            tongue, then your wait is almost over now as this is THE event for the avid programmer
-            in you.
+        <item>"Crack your knuckles and get yourselves geared up for BYTES- The online coding contest brought to you by TROIKA 2014. If you are easily enticed by challenging programmes, tempted to crack difficult algorithms and consider programming as easy as your mother tongue, then your wait is almost over now as this is THE event for the avid programmer in you.
 
-            BYTES is an ultimate platform to code which gives you an opportunity to apply your
-            expertise in programming and henceforth lets you to devise astute algorithms and create
-            ingenious programmes. With the swift and decisive tap of your fingertips, fabricate
-            exquisite codes while blending enormous amounts of creativity in it and pour knowledge
-            into this mixing pot of BYTES to concoct arete programs that work with absolute
-            perfection, impeccable precision and have the capability to amaze!
+BYTES is an ultimate platform to code which gives you an opportunity to apply your expertise in programming and henceforth lets you to devise astute algorithms and create ingenious programmes. With the swift and decisive tap of your fingertips, fabricate exquisite codes while blending enormous amounts of creativity in it and pour knowledge into this mixing pot of BYTES to concoct arete programs that work with absolute perfection, impeccable precision and have the capability to amaze!
 
-            Go on and participate to give yourself a programming treat!"
-        </item>
+Go on and participate to give yourself a programming treat!"</item>
         <!--design-pro-->
         <!--electrocution-->
         <!--envision-->
@@ -135,6 +98,7 @@
         <!--technovision-->
         <!--todoenuno-->
         <!--vihaan-->
+
 
 
     </string-array>
