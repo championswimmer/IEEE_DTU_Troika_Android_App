@@ -141,6 +141,7 @@ public class EventsFragment extends Fragment
 
         private final String[] TITLES = getResources().getStringArray(R.array.event_titles);
         private final String[] eventnames = TITLES;
+        private final String[] NAMES = getResources().getStringArray(R.array.event_names);
 
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -148,7 +149,7 @@ public class EventsFragment extends Fragment
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return TITLES[position];
+            return NAMES[position];
         }
 
         @Override
@@ -158,7 +159,7 @@ public class EventsFragment extends Fragment
 
         @Override
         public Fragment getItem(int position) {
-            return EventDetailsFragment.newInstance(eventnames[position], "a");
+            return EventDetailsFragment.newInstance(eventnames[position], position);
         }
 
     }

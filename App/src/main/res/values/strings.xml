@@ -19,18 +19,42 @@
         <item>bots</item>
         <item>brainwave</item>
         <item>bytes</item>
-        <item>design-pro</item>
+        <item>design_pro</item>
         <item>electrocution</item>
         <item>envision</item>
-        <item>ether-avatar</item>
+        <item>ether_avatar</item>
         <item>inspironnature</item>
         <item>junkyard</item>
         <item>mist</item>
         <item>radix</item>
         <item>spac</item>
         <item>technovision</item>
-        <item>todo-en-uno</item>
+        <item>todo_en_uno</item>
         <item>vihaan</item>
     </string-array>
+
+    <string-array name="event_names">
+        <item>Bits</item>
+        <item>Bots</item>
+        <item>Brainwave</item>
+        <item>Bytes</item>
+        <item>"Design Pro"</item>
+        <item>Electrocution</item>
+        <item>Envision</item>
+        <item>"Ether Avatar"</item>
+        <item>Inspironature</item>
+        <item>Junkyard</item>
+        <item>Mist</item>
+        <item>Radix</item>
+        <item>SPAC</item>
+        <item>Technovision</item>
+        <item>"Todo En Uno"</item>
+        <item>Vihaan</item>
+    </string-array>
+
+    <string-array name="event_descriptions">
+
+    </string-array>
+
 
 </resources>

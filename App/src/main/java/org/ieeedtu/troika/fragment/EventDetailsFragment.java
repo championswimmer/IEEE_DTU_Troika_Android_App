@@ -1,12 +1,15 @@
 package org.ieeedtu.troika.fragment;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import org.ieeedtu.troika.R;
 
@@ -28,7 +31,7 @@ public class EventDetailsFragment extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
-    private String mParam2;
+    private Integer mParam2;
 
     private OnFragmentInteractionListener mListener;
 
@@ -41,11 +44,11 @@ public class EventDetailsFragment extends Fragment {
      * @return A new instance of fragment EventDetailsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static EventDetailsFragment newInstance(String param1, String param2) {
+    public static EventDetailsFragment newInstance(String param1, Integer param2) {
         EventDetailsFragment fragment = new EventDetailsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putInt(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -58,7 +61,7 @@ public class EventDetailsFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            mParam2 = getArguments().getInt(ARG_PARAM2);
         }
     }
 
@@ -67,6 +70,9 @@ public class EventDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_event_details, container, false);
+        ImageView eventIcon = (ImageView) rootView.findViewById(R.id.event_icon);
+        eventIcon.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(mParam1, "drawable", getActivity().getPackageName())));
+
         return rootView;
     }
 
