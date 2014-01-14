@@ -18,7 +18,6 @@ import org.ieeedtu.troika.R;
  * to handle interaction events.
  * Use the {@link RegisterFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class RegisterFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -49,6 +48,7 @@ public class RegisterFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
     public RegisterFragment() {
         // Required empty public constructor
     }
@@ -98,7 +98,7 @@ public class RegisterFragment extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
+     * <p/>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
