@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import org.ieeedtu.troika.fragment.ContactFragment;
+import org.ieeedtu.troika.fragment.EventDetailsFragment;
 import org.ieeedtu.troika.fragment.EventsFragment;
 import org.ieeedtu.troika.fragment.RegisterFragment;
 
@@ -30,7 +31,8 @@ public class MainActivity
             NavigationDrawerFragment.NavigationDrawerCallbacks,
             ContactFragment.OnFragmentInteractionListener,
             EventsFragment.OnFragmentInteractionListener,
-            RegisterFragment.OnFragmentInteractionListener
+            RegisterFragment.OnFragmentInteractionListener,
+            EventDetailsFragment.OnFragmentInteractionListener
 {
 
     /**

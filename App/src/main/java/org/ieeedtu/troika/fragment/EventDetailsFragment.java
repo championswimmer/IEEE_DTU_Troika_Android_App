@@ -4,15 +4,9 @@ import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.astuetz.PagerSlidingTabStrip;
 
 import org.ieeedtu.troika.R;
 
@@ -20,22 +14,17 @@ import org.ieeedtu.troika.R;
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link EventsFragment.OnFragmentInteractionListener} interface
+ * {@link EventDetailsFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link EventsFragment#newInstance} factory method to
+ * Use the {@link EventDetailsFragment#newInstance} factory method to
  * create an instance of this fragment.
  *
  */
-public class EventsFragment extends Fragment
-        implements EventDetailsFragment.OnFragmentInteractionListener {
+public class EventDetailsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    private PagerSlidingTabStrip eventTabStrip;
-    private MyPagerAdapter eventPagerAdapter;
-    private ViewPager eventViewPager;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -49,18 +38,18 @@ public class EventsFragment extends Fragment
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment EventsFragment.
+     * @return A new instance of fragment EventDetailsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static EventsFragment newInstance(String param1, String param2) {
-        EventsFragment fragment = new EventsFragment();
+    public static EventDetailsFragment newInstance(String param1, String param2) {
+        EventDetailsFragment fragment = new EventDetailsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
-    public EventsFragment() {
+    public EventDetailsFragment() {
         // Required empty public constructor
     }
 
@@ -77,19 +66,7 @@ public class EventsFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_events, container, false);
-        eventTabStrip = (PagerSlidingTabStrip) rootView.findViewById(R.id.event_tabs);
-        eventViewPager = (ViewPager) rootView.findViewById(R.id.event_pager);
-        eventPagerAdapter = new MyPagerAdapter(getChildFragmentManager());
-
-        eventViewPager.setAdapter(eventPagerAdapter);
-
-        final int pageMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources()
-                .getDisplayMetrics());
-        eventViewPager.setPageMargin(pageMargin);
-
-        eventTabStrip.setViewPager(eventViewPager);
-
+        View rootView = inflater.inflate(R.layout.fragment_event_details, container, false);
         return rootView;
     }
 
@@ -117,11 +94,6 @@ public class EventsFragment extends Fragment
         mListener = null;
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
-
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -136,32 +108,5 @@ public class EventsFragment extends Fragment
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
-
-    public class MyPagerAdapter extends FragmentPagerAdapter {
-
-        private final String[] TITLES = getResources().getStringArray(R.array.event_titles);
-        private final String[] eventnames = TITLES;
-
-        public MyPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return TITLES[position];
-        }
-
-        @Override
-        public int getCount() {
-            return TITLES.length;
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return EventDetailsFragment.newInstance(eventnames[position], "a");
-        }
-
-    }
-
 
 }

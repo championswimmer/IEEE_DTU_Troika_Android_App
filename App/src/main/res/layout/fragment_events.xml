@@ -1,13 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="org.ieeedtu.troika.fragment.EventsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/event_tabs"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/event_fragment_placeholder" />
+        android:layout_height="48dip"
+        />
 
-</FrameLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/event_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_tabs"
+        tools:context=".EventFragment" />
+
+
+</RelativeLayout>

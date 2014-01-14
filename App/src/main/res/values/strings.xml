@@ -13,5 +13,24 @@
     <string name="contact_fragment_placeholder">Contact Fragment</string>
     <string name="event_fragment_placeholder">Events Fragment</string>
     <string name="register_fragment_placeholder">Register Fragment</string>
+    
+    <string-array name="event_titles">
+        <item>bits</item>
+        <item>bots</item>
+        <item>brainwave</item>
+        <item>bytes</item>
+        <item>design-pro</item>
+        <item>electrocution</item>
+        <item>envision</item>
+        <item>ether-avatar</item>
+        <item>inspironnature</item>
+        <item>junkyard</item>
+        <item>mist</item>
+        <item>radix</item>
+        <item>spac</item>
+        <item>technovision</item>
+        <item>todo-en-uno</item>
+        <item>vihaan</item>
+    </string-array>
 
 </resources>
