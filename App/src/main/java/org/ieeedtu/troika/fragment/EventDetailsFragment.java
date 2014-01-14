@@ -72,6 +72,13 @@ public class EventDetailsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_event_details, container, false);
         ImageView eventIcon = (ImageView) rootView.findViewById(R.id.event_icon);
         eventIcon.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(mParam1, "drawable", getActivity().getPackageName())));
+        String[] descriptions = getResources().getStringArray(R.array.event_descriptions);
+        TextView eventDescription = (TextView) rootView.findViewById(R.id.event_description);
+        try {
+            eventDescription.setText(descriptions[mParam2]);
+        } catch (Exception e) {
+            eventDescription.setText("No description available");
+        }
 
         return rootView;
     }
