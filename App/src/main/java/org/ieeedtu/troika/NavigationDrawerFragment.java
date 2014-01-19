@@ -232,7 +232,7 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    @Override
+    /*@Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         // If the drawer is open, show the global app actions in the action bar. See also
         // showGlobalContextActionBar, which controls the top-left area of the action bar.
@@ -242,8 +242,8 @@ public class NavigationDrawerFragment extends Fragment {
         }
         super.onCreateOptionsMenu(menu, inflater);
     }
-
-    @Override
+*/
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
@@ -255,7 +255,7 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     /**
      * Per the navigation drawer design guidelines, updates the action bar to show the global app

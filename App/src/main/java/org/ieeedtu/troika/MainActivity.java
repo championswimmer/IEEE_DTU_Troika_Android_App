@@ -1,5 +1,6 @@
 package org.ieeedtu.troika;
 
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -24,6 +25,7 @@ public class MainActivity
         RegisterFragment.OnFragmentInteractionListener,
         EventDetailsFragment.OnFragmentInteractionListener {
 
+    public Context context;
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
@@ -48,6 +50,8 @@ public class MainActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        context = getApplicationContext();
     }
 
     @Override
@@ -95,7 +99,7 @@ public class MainActivity
     }
 
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (!mNavigationDrawerFragment.isDrawerOpen()) {
             // Only show items in the action bar relevant to this screen
@@ -106,9 +110,9 @@ public class MainActivity
             return true;
         }
         return super.onCreateOptionsMenu(menu);
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -118,7 +122,7 @@ public class MainActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @Override
     public void onFragmentInteraction(Uri uri) {
