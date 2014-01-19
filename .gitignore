@@ -5,4 +5,6 @@
 *.idea
 .gradle/*
 *local.properties
-*/build
+*/build/
+library/build
+/*/build
