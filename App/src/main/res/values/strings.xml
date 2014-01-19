@@ -224,6 +224,22 @@ With this thought we present to you VIHAAN, the event organized by WIE IEEE that
 
 
     </string-array>
+    
+    <string-array name="contact_title">
+        <item>"President"</item>
+    </string-array>
+    
+    <string-array name="contact_name">
+        <item>"Rishi Pandey</item>
+    </string-array>
+    
+    <string-array name="contact_phone">
+        <item>"999999999"</item>
+    </string-array>
+    
+    <string-array name="contact_email">
+        <item>"somebody@something.com"</item>
+    </string-array>
 
 
 </resources>
