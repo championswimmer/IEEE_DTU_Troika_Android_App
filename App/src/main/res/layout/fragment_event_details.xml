@@ -18,12 +18,14 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:padding="10dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
             android:layout_marginTop="20dp" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14dp"
             android:text="Medium Text"
             android:id="@+id/event_description"
             android:layout_below="@+id/event_icon"
