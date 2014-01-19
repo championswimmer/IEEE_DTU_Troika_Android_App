@@ -1,6 +1,7 @@
 package org.ieeedtu.troika.fragment;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -89,6 +90,10 @@ public class EventsFragment extends Fragment
         eventViewPager.setPageMargin(pageMargin);
 
         eventTabStrip.setViewPager(eventViewPager);
+        eventTabStrip.setBackgroundColor(Color.DKGRAY);
+        eventTabStrip.setIndicatorColor(Color.LTGRAY);
+        eventTabStrip.setDividerColor(Color.LTGRAY);
+        eventTabStrip.setTextColor(Color.LTGRAY);
 
         return rootView;
     }

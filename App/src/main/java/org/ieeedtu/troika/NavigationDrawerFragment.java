@@ -3,6 +3,7 @@ package org.ieeedtu.troika;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -87,6 +88,7 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        getActivity().setTheme(R.style.AppDarkTheme);
         mDrawerListView = (ListView) inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -105,6 +107,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_contact),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
+        mDrawerListView.setBackgroundColor(Color.DKGRAY);
         return mDrawerListView;
     }
 
@@ -125,7 +128,6 @@ public class NavigationDrawerFragment extends Fragment {
         // set a custom shadow that overlays the main content when the drawer opens
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         // set up the drawer's list view with items and click listener
-
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);

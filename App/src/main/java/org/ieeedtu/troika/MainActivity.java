@@ -37,7 +37,7 @@ public class MainActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.AppDarkTheme);
+        setTheme(R.style.AppDarkTheme);
         setContentView(R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
