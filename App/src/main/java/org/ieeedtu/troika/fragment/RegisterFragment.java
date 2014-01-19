@@ -2,7 +2,6 @@ package org.ieeedtu.troika.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Checkable;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -150,10 +148,10 @@ public class RegisterFragment extends Fragment {
                 registerPhone = rPhone.getText().toString();
                 registerTeam = rTeam.getText().toString();
 
-                if (registerName.length()<1
-                        || registerEmail.length()<1
-                        || registerPhone.length()<1
-                        || registerTeam.length()<1) {
+                if (registerName.length() < 1
+                        || registerEmail.length() < 1
+                        || registerPhone.length() < 1
+                        || registerTeam.length() < 1) {
                     Toast invalid = Toast.makeText(getActivity().getApplicationContext(), "Name, Email, Phone and Team are required", Toast.LENGTH_SHORT);
                     invalid.show();
                     return;

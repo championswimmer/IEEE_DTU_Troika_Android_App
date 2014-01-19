@@ -13,7 +13,7 @@
     <string name="contact_fragment_placeholder">Contact Fragment</string>
     <string name="event_fragment_placeholder">Events Fragment</string>
     <string name="register_fragment_placeholder">Register Fragment</string>
-    
+
     <string-array name="event_titles">
         <item>bits</item>
         <item>bots</item>
@@ -54,189 +54,334 @@
 
     <string-array name="event_descriptions">
         <!--bits-->
-        <item>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.
-  -Linus Torvalds
+        <item>"Most good programmers do programming not because they expect to get paid or get
+            adulation by the public, but because it is fun to program.
+            -Linus Torvalds
 
-So put yourself in front of your prized laptops and desktops, revise your programming skills and let in a breath of fresh air as TROIKA 2014 brings to you BITS- The on the spot programming competition.
+            So put yourself in front of your prized laptops and desktops, revise your programming
+            skills and let in a breath of fresh air as TROIKA 2014 brings to you BITS- The on the
+            spot programming competition.
 
-To keep alive the avid programmer inside you, this contest is back and will prove to satisfy your programming cravings and examine your knowledge of programming languages like C, C++ and JAVA in a specified limited time frame as well.
+            To keep alive the avid programmer inside you, this contest is back and will prove to
+            satisfy your programming cravings and examine your knowledge of programming languages
+            like C, C++ and JAVA in a specified limited time frame as well.
 
-Your capability and creativity will be rigorously tested not only on a single level but on a multitude of levels. This contest will involve a combination of various rounds which will include different problem statements. BITS is a golden opportunity for the geek inside you to create, innovate and produce avant-garde programs.
+            Your capability and creativity will be rigorously tested not only on a single level but
+            on a multitude of levels. This contest will involve a combination of various rounds
+            which will include different problem statements. BITS is a golden opportunity for the
+            geek inside you to create, innovate and produce avant-garde programs.
 
-Ready? On your marks, get, set.. GO!"</item>
+            Ready? On your marks, get, set.. GO!"
+        </item>
         <!--bots-->
         <item>"While ( ! ( succeed=try () ) ) ;
 
-Do you consider yourself as having the capability to design a programme that will defend you from the blows and punches of the opponent's programme efficaciously and fight back at the same time with that same programme at your rescue?
+            Do you consider yourself as having the capability to design a programme that will defend
+            you from the blows and punches of the opponent's programme efficaciously and fight back
+            at the same time with that same programme at your rescue?
 
-If your answer is a yes, then prepare yourselves for the ultimate programming extravaganza as TROIKA 2014 presents to you BOTS- the AI gaming challenge. This competition utilizes your ability to formulate your gaming strategy not once but again and again, consider the pros and cons that are involved with each decisive move of yours and devise a calculative plan that will become game changing not only for you but your opponent as well.
+            If your answer is a yes, then prepare yourselves for the ultimate programming
+            extravaganza as TROIKA 2014 presents to you BOTS- the AI gaming challenge. This
+            competition utilizes your ability to formulate your gaming strategy not once but again
+            and again, consider the pros and cons that are involved with each decisive move of yours
+            and devise a calculative plan that will become game changing not only for you but your
+            opponent as well.
 
-Apply your coding wit and grit to develop a program that not only runs with perfection but rather runs over the program of your adversary and hence, defeats it to emerge victorious in the end. Effective scheming and planning along with error free and effective programming is all that's required.
+            Apply your coding wit and grit to develop a program that not only runs with perfection
+            but rather runs over the program of your adversary and hence, defeats it to emerge
+            victorious in the end. Effective scheming and planning along with error free and
+            effective programming is all that's required.
 
-So are you prepped up for some action?"</item>
+            So are you prepped up for some action?"
+        </item>
         <!--brainwave-->
-        <item>"Are you enthralled by the fact that how a single click of yours opens up a kinky &amp; glittery world of gadgetry, that you love to dwell in for hours???
+        <item>"Are you enthralled by the fact that how a single click of yours opens up a kinky
+            &amp; glittery world of gadgetry, that you love to dwell in for hours???
 
-If hitherto your head nods in a yes, then with certainty I say WAVES of catechism pertaining to the world of embedded systems would barrage your BRAIN.
+            If hitherto your head nods in a yes, then with certainty I say WAVES of catechism
+            pertaining to the world of embedded systems would barrage your BRAIN.
 
-BRAINWAVE is the destination you must set for yourself. BRAINWAVE is the ultimate hardware design challenge with a special focus on the implementation and augmentation gratifying your Electronics appetite to a level of surfeit. The moment has dawned upon once gain...and its time you showcase your brain and win waves of accolades by playing with that small gizmo that you have, the MICROCONTROLLER! "</item>
+            BRAINWAVE is the destination you must set for yourself. BRAINWAVE is the ultimate
+            hardware design challenge with a special focus on the implementation and augmentation
+            gratifying your Electronics appetite to a level of surfeit. The moment has dawned upon
+            once gain...and its time you showcase your brain and win waves of accolades by playing
+            with that small gizmo that you have, the MICROCONTROLLER! "
+        </item>
         <!--bytes-->
-        <item>"Crack your knuckles and get yourselves geared up for BYTES- The online coding contest brought to you by TROIKA 2014. If you are easily enticed by challenging programmes, tempted to crack difficult algorithms and consider programming as easy as your mother tongue, then your wait is almost over now as this is THE event for the avid programmer in you.
+        <item>"Crack your knuckles and get yourselves geared up for BYTES- The online coding contest
+            brought to you by TROIKA 2014. If you are easily enticed by challenging programmes,
+            tempted to crack difficult algorithms and consider programming as easy as your mother
+            tongue, then your wait is almost over now as this is THE event for the avid programmer
+            in you.
 
-BYTES is an ultimate platform to code which gives you an opportunity to apply your expertise in programming and henceforth lets you to devise astute algorithms and create ingenious programmes. With the swift and decisive tap of your fingertips, fabricate exquisite codes while blending enormous amounts of creativity in it and pour knowledge into this mixing pot of BYTES to concoct arete programs that work with absolute perfection, impeccable precision and have the capability to amaze!
+            BYTES is an ultimate platform to code which gives you an opportunity to apply your
+            expertise in programming and henceforth lets you to devise astute algorithms and create
+            ingenious programmes. With the swift and decisive tap of your fingertips, fabricate
+            exquisite codes while blending enormous amounts of creativity in it and pour knowledge
+            into this mixing pot of BYTES to concoct arete programs that work with absolute
+            perfection, impeccable precision and have the capability to amaze!
 
-Go on and participate to give yourself a programming treat!"</item>
+            Go on and participate to give yourself a programming treat!"
+        </item>
         <!--design-pro-->
-        <item>"Creativity is more than just being different. Anybody can plan weird; that's easy. What’s hard is to be as simple as Bach. Making the simple, awesomely simple, that's creativity
-  - Charles Mingus
+        <item>"Creativity is more than just being different. Anybody can plan weird; that's easy.
+            What’s hard is to be as simple as Bach. Making the simple, awesomely simple, that's
+            creativity
+            - Charles Mingus
 
-Design Pro is an innovative event that challenges the creative bug in you. To master this event, you need to be a proficient image designer, web developer or animator, any one of them. The event is sub-divided into three categories:
+            Design Pro is an innovative event that challenges the creative bug in you. To master
+            this event, you need to be a proficient image designer, web developer or animator, any
+            one of them. The event is sub-divided into three categories:
 
-  Animax: The ultimate Animation Challenge
-  CreatX: The graphic designing contest.
-  Webimax: On the spot web development competition.
+            Animax: The ultimate Animation Challenge
+            CreatX: The graphic designing contest.
+            Webimax: On the spot web development competition.
 
-Everything we see on the web, be it a sterling website, an awe-inspiring animation or the attention grabbing posters and banners, all are a result of background work of few visionary creative geniuses who are able to couple their technical brilliance with creative propensity and deliver visually striking products, which can gather the necessary audience.
+            Everything we see on the web, be it a sterling website, an awe-inspiring animation or
+            the attention grabbing posters and banners, all are a result of background work of few
+            visionary creative geniuses who are able to couple their technical brilliance with
+            creative propensity and deliver visually striking products, which can gather the
+            necessary audience.
 
-Design pro is the perfect place for creative geniuses who can design the most wondrous website that leaves people awestruck or a prodigious animation that will cause even the makers of 'Shrek' and 'Up' to envy you and those of 'Life of Pi' to rethink.
+            Design pro is the perfect place for creative geniuses who can design the most wondrous
+            website that leaves people awestruck or a prodigious animation that will cause even the
+            makers of 'Shrek' and 'Up' to envy you and those of 'Life of Pi' to rethink.
 
-Let your imagination come to the fore, dig up your creative resources to find the right mix of creative supplements to showcase your ingenious skills and style."</item>
+            Let your imagination come to the fore, dig up your creative resources to find the right
+            mix of creative supplements to showcase your ingenious skills and style."
+        </item>
         <!--electrocution-->
-        <item>"Ever dreamt of being bombarded by a stream of resistors, diodes, capacitors and inductors? If yes then its time you take your revenge, enslave them and play with them!
+        <item>"Ever dreamt of being bombarded by a stream of resistors, diodes, capacitors and
+            inductors? If yes then its time you take your revenge, enslave them and play with them!
 
-TROIKA 14 presents to you the event ELECTROCUTION which will scrutinize the Ohm, Farad and Henry within you and will hallmark you as the wizard of circuits, if you emerge as the winner. Practical knowledge sandwiched by what you learned within the walls of the classroom is what you require to attain the ultimate glory.
+            TROIKA 14 presents to you the event ELECTROCUTION which will scrutinize the Ohm, Farad
+            and Henry within you and will hallmark you as the wizard of circuits, if you emerge as
+            the winner. Practical knowledge sandwiched by what you learned within the walls of the
+            classroom is what you require to attain the ultimate glory.
 
-So let the frenzy, furor and fuss of the circuits run through your blood and prepare yourself not to get ELECTROCUTED!"</item>
+            So let the frenzy, furor and fuss of the circuits run through your blood and prepare
+            yourself not to get ELECTROCUTED!"
+        </item>
         <!--envision-->
-        <item>"It's OK to figure out murder mysteries, but you shouldn't need to figure out code. You should be able to read it
-  - Steve McConnell
+        <item>"It's OK to figure out murder mysteries, but you shouldn't need to figure out code.
+            You should be able to read it
+            - Steve McConnell
 
-Software development is the versatile equivalent of poetry and prose to engineers. A flair for coding, even if a budding one, should be pursued through various opportunities. Such an opportunity comes along your way in the form of Envision, a software conceptualizing event in TROIKA 2014.
+            Software development is the versatile equivalent of poetry and prose to engineers. A
+            flair for coding, even if a budding one, should be pursued through various
+            opportunities. Such an opportunity comes along your way in the form of Envision, a
+            software conceptualizing event in TROIKA 2014.
 
-Envision is a virtual playground, where survival of the deftest prevails. The event consists of two categories -
+            Envision is a virtual playground, where survival of the deftest prevails. The event
+            consists of two categories -
 
-    1. Ingenuity (open coding)
-    2. Dexterity (predefined coding)
+            1. Ingenuity (open coding)
+            2. Dexterity (predefined coding)
 
-These two categories will ensure that the coder isn't left devoid of any finesse that he/she has. There is always a need of software innovation in this dynamic technocracy. Team TROIKA will guarantee that the people tend to this need and nurture them into the adept engineers that they will be."</item>
+            These two categories will ensure that the coder isn't left devoid of any finesse that
+            he/she has. There is always a need of software innovation in this dynamic technocracy.
+            Team TROIKA will guarantee that the people tend to this need and nurture them into the
+            adept engineers that they will be."
+        </item>
         <!--ether-avatar-->
         <item>"
             Ignorance is the curse of God;
             Knowledge is the wing wherewith we fly to heaven.
             -William Shakespeare
 
-Knowledge is a word which you can define in as many ways as you want to. But for us at IEEE-DTU, knowledge is what helps you master Ether Avatar.
+            Knowledge is a word which you can define in as many ways as you want to. But for us at
+            IEEE-DTU, knowledge is what helps you master Ether Avatar.
 
-Ether Avatar is a LAN quizzing event wherein everyone will be simultaneously attempting the quiz by typing in their answers on the computers that we provide at the venue. Ether will test your knowledge based on anything and everything under the sun. You can be asked questions from Science, Technology, Business, Mythology, Entertainment, Literature, Sports, Geography, Heritage, Politics and what not. But it’s not just knowledge that you will require. Climbing the Ether ladder requires a combination of impeccable presence of mind, quick thinking and perfect ability to connect the dots in addition to comprehensive knowledge.
+            Ether Avatar is a LAN quizzing event wherein everyone will be simultaneously attempting
+            the quiz by typing in their answers on the computers that we provide at the venue. Ether
+            will test your knowledge based on anything and everything under the sun. You can be
+            asked questions from Science, Technology, Business, Mythology, Entertainment,
+            Literature, Sports, Geography, Heritage, Politics and what not. But it’s not just
+            knowledge that you will require. Climbing the Ether ladder requires a combination of
+            impeccable presence of mind, quick thinking and perfect ability to connect the dots in
+            addition to comprehensive knowledge.
 
-The bug of curiosity you have been sheltering since time immemorial will be put to test when the best of the best quizzers, knowledge enthusiasts and geeks of Delhi and around will be pitted against each other in an ever so thrilling encounter.
+            The bug of curiosity you have been sheltering since time immemorial will be put to test
+            when the best of the best quizzers, knowledge enthusiasts and geeks of Delhi and around
+            will be pitted against each other in an ever so thrilling encounter.
 
-So if you think you know A LOT of things about A LOT of things, if you think you can crack anything and everything put forward to you from the vast never ending world of general knowledge, if you think you have the true quizzing spirit in you, Ether is the event for you to participate."</item>
+            So if you think you know A LOT of things about A LOT of things, if you think you can
+            crack anything and everything put forward to you from the vast never ending world of
+            general knowledge, if you think you have the true quizzing spirit in you, Ether is the
+            event for you to participate."
+        </item>
         <!--inspironnature-->
         <item>"
-    I learnt from the sun
-    That light has to be spread,
-    The breeze taught me
-    How to be cool all the time
-    The trees inspired me to be colossal in giving
-    As I discovered serenity from water
-    And the vacuum made me understand
-    How to live with nothing around
-    For nature had all virtues a man needs to learn
-    In all its elements
+            I learnt from the sun
+            That light has to be spread,
+            The breeze taught me
+            How to be cool all the time
+            The trees inspired me to be colossal in giving
+            As I discovered serenity from water
+            And the vacuum made me understand
+            How to live with nothing around
+            For nature had all virtues a man needs to learn
+            In all its elements
 
-Inspironature, an event to mimic nature's phenomenon provides you with an opportunity to ideate and innovate to design instrument for the benefit of mankind. Its working or principle should be based on the natural processes or the natural scheme of events that you see around in your environment. So use all your grey matter and be vigilant about the vibrant nature and its phenomenon and principles. Mimic nature's principles and mould them into an idea of your own instrument.
+            Inspironature, an event to mimic nature's phenomenon provides you with an opportunity to
+            ideate and innovate to design instrument for the benefit of mankind. Its working or
+            principle should be based on the natural processes or the natural scheme of events that
+            you see around in your environment. So use all your grey matter and be vigilant about
+            the vibrant nature and its phenomenon and principles. Mimic nature's principles and
+            mould them into an idea of your own instrument.
 
-So use all your grey matter and be vigilant about the vibrant nature and its phenomenon and principles. Mimic nature's principles and mould them into an idea of your own instrument. "</item>
+            So use all your grey matter and be vigilant about the vibrant nature and its phenomenon
+            and principles. Mimic nature's principles and mould them into an idea of your own
+            instrument. "
+        </item>
         <!--junkyard-->
-        <item>"Creativity is not the finding of a thing, but the making something out of it after it is found.
+        <item>"Creativity is not the finding of a thing, but the making something out of it after it
+            is found.
 
-Man has designed innumerable ingenious mechanisms to simplify his day to day life. So, what about making tools out of waste? Can scrap be used to make useful machinery?
+            Man has designed innumerable ingenious mechanisms to simplify his day to day life. So,
+            what about making tools out of waste? Can scrap be used to make useful machinery?
 
-Junkyard aims to answer such questions and that too in a fun way. Junkyard provides a platform for those creative genii in you, who like to think out of the box. To excel in this competition you just need to have loads of enthusiasm, tons of perseverance, tolerance to a high magnitude of dirt &amp; grease and zeal of innovation.
+            Junkyard aims to answer such questions and that too in a fun way. Junkyard provides a
+            platform for those creative genii in you, who like to think out of the box. To excel in
+            this competition you just need to have loads of enthusiasm, tons of perseverance,
+            tolerance to a high magnitude of dirt &amp; grease and zeal of innovation.
 
-In this event, you will be provided with problem statements and the junk. All you have to do is use your technical knowhow coupled with your "Jugaad" skills to find just the right tools and scrap, enabling you to provide solutions to solve the problem statements.
+            In this event, you will be provided with problem statements and the junk. All you have
+            to do is use your technical knowhow coupled with your "Jugaad" skills to find just the
+            right tools and scrap, enabling you to provide solutions to solve the problem
+            statements.
 
-There is just one GOLDEN RULE that there is no GOLDEN RULE.
+            There is just one GOLDEN RULE that there is no GOLDEN RULE.
 
-For all those who consider themselves mechanical geniuses or creative maniacs, it's time to break free! Enter the battlefield of trash and put your innovative skills to work!
+            For all those who consider themselves mechanical geniuses or creative maniacs, it's time
+            to break free! Enter the battlefield of trash and put your innovative skills to work!
 
-Use your imagination and bring to life your brainchild for everyone to see"</item>
+            Use your imagination and bring to life your brainchild for everyone to see"
+        </item>
         <!--mist-->
         <item>"
-Do you think you have what it takes to solve mysteries? Do you sometimes feel that you would have been better suited in the shoes of detective?z
+            Do you think you have what it takes to solve mysteries? Do you sometimes feel that you
+            would have been better suited in the shoes of detective?z
 
-As Troika is eagerly awaited, we foray into yet another, highly anticipated edition of MIST, the online treasure hunt guaranteed to force your brain into overdrive. Challenge your mental faculties, as your lateral thinking skills are pushed to the utmost limit. Attack levels with the ferocity of a tiger, while dodging traps with the dexterity of a snake. Battle it out with participants all around the globe, with the added satisfaction of gaining bragging rights.
+            As Troika is eagerly awaited, we foray into yet another, highly anticipated edition of
+            MIST, the online treasure hunt guaranteed to force your brain into overdrive. Challenge
+            your mental faculties, as your lateral thinking skills are pushed to the utmost limit.
+            Attack levels with the ferocity of a tiger, while dodging traps with the dexterity of a
+            snake. Battle it out with participants all around the globe, with the added satisfaction
+            of gaining bragging rights.
 
-MIST is bigger, better and far more challenging than it has ever been. No mere mortal will survive this quest. Establish yourself as the last-man standing, one who has passed all tests of endurance, and reach out for the coveted pinnacle of the leaderboard, while fending off dangers from your rivals.
+            MIST is bigger, better and far more challenging than it has ever been. No mere mortal
+            will survive this quest. Establish yourself as the last-man standing, one who has passed
+            all tests of endurance, and reach out for the coveted pinnacle of the leaderboard, while
+            fending off dangers from your rivals.
 
-Welcome aboard. Great treasures await you."</item>
+            Welcome aboard. Great treasures await you."
+        </item>
         <!--radix-->
         <item>"
 
-    Tighten the screws and oil your brain
-    For those who stand strong, no effort goes in vain.
+            Tighten the screws and oil your brain
+            For those who stand strong, no effort goes in vain.
 
-Do you nurture an inherent desire within the deep strata of your heart to control the world? If yes, then the time has come when you can shine as the master of if not people around you but certainly the ROBOTS created by YOU!
+            Do you nurture an inherent desire within the deep strata of your heart to control the
+            world? If yes, then the time has come when you can shine as the master of if not people
+            around you but certainly the ROBOTS created by YOU!
 
-TROIKA '14 presents RADIX, the Robotics carnival which will provide you the steps to attain the zenith of Robotics and emerge as the master. You will be obliged to bisect your focus equally between mechanical and autonomous events, with fighting, outracing and manipulating others bots to emerge as the ultimate winner.
+            TROIKA '14 presents RADIX, the Robotics carnival which will provide you the steps to
+            attain the zenith of Robotics and emerge as the master. You will be obliged to bisect
+            your focus equally between mechanical and autonomous events, with fighting, outracing
+            and manipulating others bots to emerge as the ultimate winner.
 
-So create a slave of your own and use it to be the master of all!!"</item>
+            So create a slave of your own and use it to be the master of all!!"
+        </item>
         <!--spac-->
         <item>"The true sense of intelligence is not knowledge but inspiration.
-  -Albert Einstein
+            -Albert Einstein
 
-Upon graduating, Should I join a company or should I go for research? Should I pursue higher studies or should I try to open a start-up?
+            Upon graduating, Should I join a company or should I go for research? Should I pursue
+            higher studies or should I try to open a start-up?
 
-Career-oriented questions like these bother us all the time. Here is an opportunity for you to get answers to all such queries at SPAC 2014.
+            Career-oriented questions like these bother us all the time. Here is an opportunity for
+            you to get answers to all such queries at SPAC 2014.
 
-SPAC, Student Professional Awareness Conference, aims to bridge the gap between the professional needs of technologists-in-training and wisdom of technology leaders from different fields. It provides the perfect platform to not only increase professional awareness among engineering students but also helps them widen their view on the real world.
+            SPAC, Student Professional Awareness Conference, aims to bridge the gap between the
+            professional needs of technologists-in-training and wisdom of technology leaders from
+            different fields. It provides the perfect platform to not only increase professional
+            awareness among engineering students but also helps them widen their view on the real
+            world.
 
-So, spark your career by being a part of this conference that congregates the knowledge and expertise of esteemed and successful engineers and industrialists!"</item>
+            So, spark your career by being a part of this conference that congregates the knowledge
+            and expertise of esteemed and successful engineers and industrialists!"
+        </item>
         <!--technovision-->
-        <item>"Hold your breaths my dear technical researchers; we bring to you Technovision, the technical research paper presentation competition to be held during Troika '14- the annual tech-fest of IEEE-DTU Chapter.
+        <item>"Hold your breaths my dear technical researchers; we bring to you Technovision, the
+            technical research paper presentation competition to be held during Troika '14- the
+            annual tech-fest of IEEE-DTU Chapter.
 
-If you aim to become a real life Sheldon Cooper and your place of worship is the lab of your college, then Technovision is the event for you.
+            If you aim to become a real life Sheldon Cooper and your place of worship is the lab of
+            your college, then Technovision is the event for you.
 
-Through Technovision, we aim to bring out the impeccable observational skills of people with scientifically oriented minds, in their fields of interest ranging from Electronics, Electricals and Computers to Bio-Technology and Chemistry. The thorough study and comprehensive research done by the budding young minds of our country can be showcased through their research papers, also testing their sharp presentation skills at the same time.
+            Through Technovision, we aim to bring out the impeccable observational skills of people
+            with scientifically oriented minds, in their fields of interest ranging from
+            Electronics, Electricals and Computers to Bio-Technology and Chemistry. The thorough
+            study and comprehensive research done by the budding young minds of our country can be
+            showcased through their research papers, also testing their sharp presentation skills at
+            the same time.
 
-So for all the budding research scholars and prospective Nobel Laureates, Technovision is THE event for you. Show off your research, receive accolades and the chance to get your paper published in a recognized journal."</item>
+            So for all the budding research scholars and prospective Nobel Laureates, Technovision
+            is THE event for you. Show off your research, receive accolades and the chance to get
+            your paper published in a recognized journal."
+        </item>
         <!--todoenuno-->
         <item>"
 
-  How long did it take you to solve the level-3 Sudoku?
-  Hey, what would be the trick solving this puzzle?
+            How long did it take you to solve the level-3 Sudoku?
+            Hey, what would be the trick solving this puzzle?
 
-If these questions comprise your candid conversations, then look no further. Troika 2014 is pleased to announce the IQ- quizzing competition, Todo-en-Uno, as part of its roster of various events.
+            If these questions comprise your candid conversations, then look no further. Troika 2014
+            is pleased to announce the IQ- quizzing competition, Todo-en-Uno, as part of its roster
+            of various events.
 
-As the name translates into Spanish as 'All in one', the competition will ensure the meaning of the name. The quizzing event will cover the entire spectrum of knowledge including logic, puzzles, code breaking, encryption, mathematics, anagrams, matrix and pictoral conundrums, and audiovisual rounds.
+            As the name translates into Spanish as 'All in one', the competition will ensure the
+            meaning of the name. The quizzing event will cover the entire spectrum of knowledge
+            including logic, puzzles, code breaking, encryption, mathematics, anagrams, matrix and
+            pictoral conundrums, and audiovisual rounds.
 
-So put your thinking caps on and tackle the trivia maze.
+            So put your thinking caps on and tackle the trivia maze.
 
-Get connected to our Facebook page for more updates."</item>
+            Get connected to our Facebook page for more updates."
+        </item>
         <!--vihaan-->
-        <item>"While her friends played with Barbie dolls, she was busy playing with technology, and creating the future. Such is a story of a woman in engineering
+        <item>"While her friends played with Barbie dolls, she was busy playing with technology, and
+            creating the future. Such is a story of a woman in engineering
 
-IEEE Women in Engineering (WIE) is the largest international professional organization dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests to a career in engineering.
+            IEEE Women in Engineering (WIE) is the largest international professional organization
+            dedicated to promoting women engineers and scientists and inspiring girls around the
+            world to follow their academic interests to a career in engineering.
 
-With this thought we present to you VIHAAN, the event organized by WIE IEEE that aims to create a new beginning for women in engineering by providing them a unique opportunity to participate in a girls' only coding competition that aims to test your intelligence and grasping power. Be a part of the event and share our vision of a vibrant community of women and men collectively using their diverse talents to innovate for the benefit of humanity."</item>
-
+            With this thought we present to you VIHAAN, the event organized by WIE IEEE that aims to
+            create a new beginning for women in engineering by providing them a unique opportunity
+            to participate in a girls' only coding competition that aims to test your intelligence
+            and grasping power. Be a part of the event and share our vision of a vibrant community
+            of women and men collectively using their diverse talents to innovate for the benefit of
+            humanity."
+        </item>
 
 
     </string-array>
-    
+
     <string-array name="contact_title">
         <item>"President"</item>
     </string-array>
-    
+
     <string-array name="contact_name">
         <item>"Rishi Pandey</item>
     </string-array>
-    
+
     <string-array name="contact_phone">
         <item>"999999999"</item>
     </string-array>
-    
+
     <string-array name="contact_email">
         <item>"somebody@something.com"</item>
     </string-array>

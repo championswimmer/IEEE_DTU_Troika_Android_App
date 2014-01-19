@@ -1,18 +1,13 @@
 package org.ieeedtu.troika.utils;
 
 import android.app.Activity;
-import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
-import android.widget.CheckedTextView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.ieeedtu.troika.R;
-
-import java.security.acl.Group;
 
 /**
  * Created by championswimmer on 20/1/14.
@@ -63,7 +58,7 @@ public class ContactsListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        if (groupPosition>2) {
+        if (groupPosition > 2) {
             return 3;
         } else {
             return 2;
