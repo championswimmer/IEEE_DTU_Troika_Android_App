@@ -1,3 +1,9 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -47,35 +53,185 @@
 
     <LinearLayout
         android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/register_teamname"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_teamname"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/linearLayout"
         android:id="@+id/left_events"
-        android:paddingLeft="20dp">
+        android:paddingLeft="15dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_bits">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bits"
+                android:textAllCaps="true"
+                android:id="@+id/register_bits_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="bits"
+                android:id="@+id/register_bits_check" />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/register_teamname"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
             android:layout_centerHorizontal="true"
-            android:id="@+id/register_bits">
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/register_bits_check" />
-
-
+            android:id="@+id/register_bots">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Bits"
-                android:id="@+id/register_bits_name" />
-
+                android:text="Bots"
+                android:textAllCaps="true"
+                android:id="@+id/register_bots_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="bots"
+                android:id="@+id/register_bots_check" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_brainwave">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="brainwave"
+                android:textAllCaps="true"
+                android:id="@+id/register_brainwave_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="brainwave"
+                android:id="@+id/register_brainwave_check" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_bytes">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bytes"
+                android:textAllCaps="true"
+                android:id="@+id/register_bytes_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="bytes"
+                android:id="@+id/register_bytes_check" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_design_pro">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="design_pro"
+                android:textAllCaps="true"
+                android:id="@+id/register_design_pro_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="design_pro"
+                android:id="@+id/register_design_pro_check" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_electrocution">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="100dp"
+                android:text="electrocution"
+                android:textAllCaps="true"
+                android:id="@+id/register_electrocution_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="electrocution"
+                android:id="@+id/register_electrocution_check" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_envision">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="envision"
+                android:textAllCaps="true"
+                android:id="@+id/register_envision_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="envision"
+                android:id="@+id/register_envision_check" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_ether_avatar">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ether_avatar"
+                android:textAllCaps="true"
+                android:id="@+id/register_ether_avatar_name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="ether_avatar"
+                android:id="@+id/register_ether_avatar_check" />
         </LinearLayout>
 
 
@@ -89,51 +245,193 @@
         android:layout_toRightOf="@+id/left_events"
         android:gravity="right"
         android:id="@+id/right_events"
-        android:paddingRight="20dp">
+        android:paddingRight="15dp">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/register_teamname"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
             android:layout_centerHorizontal="true"
-            android:id="@+id/register_bots">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Bots"
-                android:id="@+id/register_bots_name" />
+            android:id="@+id/register_vihaan">
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/register_bots_check" />
-
-
+                android:tag="vihaan"
+                android:id="@+id/register_vihaan_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vihaan"
+                android:textAllCaps="true"
+                android:id="@+id/register_vihaan_name" />
 
         </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_todo_en_uno">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="todo_en_uno"
+                android:id="@+id/register_todo_en_uno_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="todo_en_uno"
+                android:textAllCaps="true"
+                android:id="@+id/register_todo_en_uno_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_technovision">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="technovision"
+                android:id="@+id/register_technovision_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="technovision"
+                android:textAllCaps="true"
+                android:id="@+id/register_technovision_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_spac">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="spac"
+                android:id="@+id/register_spac_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spac"
+                android:textAllCaps="true"
+                android:id="@+id/register_spac_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_radix">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="radix"
+                android:id="@+id/register_radix_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="radix"
+                android:textAllCaps="true"
+                android:id="@+id/register_radix_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_mist">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="mist"
+                android:id="@+id/register_mist_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mist"
+                android:textAllCaps="true"
+                android:id="@+id/register_mist_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_junkyard">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="junkyard"
+                android:id="@+id/register_junkyard_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="junkyard"
+                android:textAllCaps="true"
+                android:id="@+id/register_junkyard_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/register_inspironnature">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="inspironnature"
+                android:id="@+id/register_inspironnature_check" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inspironnature"
+                android:textAllCaps="true"
+                android:id="@+id/register_inspironnature_name" />
+
+        </LinearLayout>
+
 
 
     </LinearLayout>
 
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_below="@+id/register_teamname"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/linearLayout">
-
-        </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Submit"
         android:id="@+id/register_submit"
+        android:layout_below="@id/right_events"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
+</ScrollView>

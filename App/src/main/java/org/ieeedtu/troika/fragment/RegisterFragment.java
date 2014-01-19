@@ -2,6 +2,7 @@ package org.ieeedtu.troika.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -11,7 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Checkable;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -98,10 +102,44 @@ public class RegisterFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_register, container, false);
         final EditText rName, rEmail, rPhone, rTeam;
+        final CheckBox
+                bits,
+                bots,
+                brainwave,
+                bytes,
+                design_pro,
+                electrocution,
+                envision,
+                ether_avatar,
+                inspironnature,
+                junkyard,
+                mist,
+                radix,
+                spac,
+                technovision,
+                todo_en_uno,
+                vihaan;
+
         rName = (EditText) rootView.findViewById(R.id.register_name);
         rEmail = (EditText) rootView.findViewById(R.id.register_email);
         rPhone = (EditText) rootView.findViewById(R.id.register_phone);
         rTeam = (EditText) rootView.findViewById(R.id.register_teamname);
+        bits = (CheckBox) rootView.findViewById(R.id.register_bits_check);
+        bots = (CheckBox) rootView.findViewById(R.id.register_bots_check);
+        brainwave = (CheckBox) rootView.findViewById(R.id.register_brainwave_check);
+        bytes = (CheckBox) rootView.findViewById(R.id.register_bytes_check);
+        design_pro = (CheckBox) rootView.findViewById(R.id.register_design_pro_check);
+        electrocution = (CheckBox) rootView.findViewById(R.id.register_electrocution_check);
+        envision = (CheckBox) rootView.findViewById(R.id.register_envision_check);
+        ether_avatar = (CheckBox) rootView.findViewById(R.id.register_ether_avatar_check);
+        inspironnature = (CheckBox) rootView.findViewById(R.id.register_inspironnature_check);
+        junkyard = (CheckBox) rootView.findViewById(R.id.register_junkyard_check);
+        mist = (CheckBox) rootView.findViewById(R.id.register_mist_check);
+        radix = (CheckBox) rootView.findViewById(R.id.register_radix_check);
+        spac = (CheckBox) rootView.findViewById(R.id.register_spac_check);
+        technovision = (CheckBox) rootView.findViewById(R.id.register_technovision_check);
+        todo_en_uno = (CheckBox) rootView.findViewById(R.id.register_todo_en_uno_check);
+        vihaan = (CheckBox) rootView.findViewById(R.id.register_vihaan_check);
 
         Button submit = (Button) rootView.findViewById(R.id.register_submit);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -112,19 +150,65 @@ public class RegisterFragment extends Fragment {
                 registerPhone = rPhone.getText().toString();
                 registerTeam = rTeam.getText().toString();
 
+                if (registerName.length()<1
+                        || registerEmail.length()<1
+                        || registerPhone.length()<1
+                        || registerTeam.length()<1) {
+                    Toast invalid = Toast.makeText(getActivity().getApplicationContext(), "Name, Email, Phone and Team are required", Toast.LENGTH_SHORT);
+                    invalid.show();
+                    return;
+                }
+
+                String reg_bits = String.valueOf(bits.isChecked());
+                String reg_bots = String.valueOf(bots.isChecked());
+                String reg_brainwave = String.valueOf(brainwave.isChecked());
+                String reg_bytes = String.valueOf(bytes.isChecked());
+                String reg_design_pro = String.valueOf(design_pro.isChecked());
+                String reg_electrocution = String.valueOf(electrocution.isChecked());
+                String reg_envision = String.valueOf(envision.isChecked());
+                String reg_ether_avatar = String.valueOf(ether_avatar.isChecked());
+                String reg_inspironnature = String.valueOf(inspironnature.isChecked());
+                String reg_junkyard = String.valueOf(junkyard.isChecked());
+                String reg_mist = String.valueOf(mist.isChecked());
+                String reg_radix = String.valueOf(radix.isChecked());
+                String reg_spac = String.valueOf(spac.isChecked());
+                String reg_technovision = String.valueOf(technovision.isChecked());
+                String reg_todo_en_uno = String.valueOf(todo_en_uno.isChecked());
+                String reg_vihaan = String.valueOf(vihaan.isChecked());
+
+
                 HttpClient submitClient = new DefaultHttpClient();
-                HttpPost submitPost = new HttpPost("http://troika.dcetech.com/register/submit.php");
+                HttpPost submitPost = new HttpPost("http://troika.dcetech.com/register/submit-app.php");
                 List<NameValuePair> postPair = new ArrayList<NameValuePair>();
                 postPair.add(new BasicNameValuePair("name", registerName));
                 postPair.add(new BasicNameValuePair("email", registerEmail));
                 postPair.add(new BasicNameValuePair("phone", registerPhone));
                 postPair.add(new BasicNameValuePair("teamname", registerTeam));
+                postPair.add(new BasicNameValuePair("bits", reg_bits));
+                postPair.add(new BasicNameValuePair("bots", reg_bots));
+                postPair.add(new BasicNameValuePair("brainwave", reg_brainwave));
+                postPair.add(new BasicNameValuePair("bytes", reg_bytes));
+                postPair.add(new BasicNameValuePair("design_pro", reg_design_pro));
+                postPair.add(new BasicNameValuePair("electrocution", reg_electrocution));
+                postPair.add(new BasicNameValuePair("envision", reg_envision));
+                postPair.add(new BasicNameValuePair("ether_avatar", reg_ether_avatar));
+                postPair.add(new BasicNameValuePair("inspironnature", reg_inspironnature));
+                postPair.add(new BasicNameValuePair("junkyard", reg_junkyard));
+                postPair.add(new BasicNameValuePair("mist", reg_mist));
+                postPair.add(new BasicNameValuePair("radix", reg_radix));
+                postPair.add(new BasicNameValuePair("spac", reg_spac));
+                postPair.add(new BasicNameValuePair("technovision", reg_technovision));
+                postPair.add(new BasicNameValuePair("todo_en_uno", reg_todo_en_uno));
+                postPair.add(new BasicNameValuePair("vihaan", reg_vihaan));
+
                 try {
                     submitPost.setEntity(new UrlEncodedFormEntity(postPair));
                     submitClient.execute(submitPost);
-                    //HttpResponse submitResponse = submitClient.execute(submitPost);
-                    //String response = EntityUtils.toString(submitResponse.getEntity());
-                    //Log.d("TROIKA", response);
+
+                    HttpResponse submitResponse = submitClient.execute(submitPost);
+                    String response = EntityUtils.toString(submitResponse.getEntity());
+                    Log.d("TROIKA_URL", postPair.toString());
+                    Log.d("TROIKA", response);
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 } catch (ClientProtocolException e) {
