@@ -90,7 +90,7 @@ public class EventsFragment extends Fragment
         eventViewPager.setPageMargin(pageMargin);
 
         eventTabStrip.setViewPager(eventViewPager);
-        eventTabStrip.setBackgroundColor(Color.DKGRAY);
+        eventTabStrip.setBackgroundColor(Color.rgb(41, 128, 185));
         eventTabStrip.setIndicatorColor(Color.LTGRAY);
         eventTabStrip.setDividerColor(Color.LTGRAY);
         eventTabStrip.setTextColor(Color.LTGRAY);

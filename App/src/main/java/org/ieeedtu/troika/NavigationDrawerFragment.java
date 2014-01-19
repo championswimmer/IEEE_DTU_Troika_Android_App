@@ -107,7 +107,7 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_contact),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
-        mDrawerListView.setBackgroundColor(Color.DKGRAY);
+        mDrawerListView.setBackgroundColor(Color.rgb(41, 128, 185));
         return mDrawerListView;
     }
 
