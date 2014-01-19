@@ -1,6 +1,7 @@
 package org.ieeedtu.troika.utils;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,12 +47,23 @@ public class ContactsListAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, final int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
         final String children = (String) getChild(groupPosition, childPosition);
-        TextView text = null;
+        TextView key, value;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.list_contacts_details, null);
         }
-        text = (TextView) convertView.findViewById(R.id.contact_details_email);
-        text.setText(children);
+        key = (TextView) convertView.findViewById(R.id.contact_details_key);
+        value = (TextView) convertView.findViewById(R.id.contact_details_value);
+
+        if ((groupPosition<3)&&(childPosition==0)) {
+            key.setVisibility(View.GONE);
+            value.setVisibility(View.GONE);
+            convertView.setVisibility(View.GONE);
+        } else {
+            key.setVisibility(View.VISIBLE);
+            value.setVisibility(View.VISIBLE);
+            convertView.setVisibility(View.VISIBLE);
+        }
+        value.setText(children);
 
         return convertView;
     }
@@ -96,7 +108,16 @@ public class ContactsListAdapter extends BaseExpandableListAdapter {
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.list_contacts_title, null);
         }
-        ((TextView) convertView).setText(contact.cTitle[groupPosition]);
+        View partition = convertView.findViewById(R.id.contact_title_partition);
+        TextView contactTitle = (TextView) convertView.findViewById(R.id.contact_title);
+        contactTitle.setText(contact.cTitle[groupPosition]);
+        if (groupPosition==3) {
+            partition.setBackgroundColor(Color.DKGRAY);
+            partition.setVisibility(View.VISIBLE);
+        } else {
+            partition.setVisibility(View.INVISIBLE);
+        }
+
         return convertView;
     }
 

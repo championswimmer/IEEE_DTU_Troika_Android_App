@@ -226,19 +226,39 @@ With this thought we present to you VIHAAN, the event organized by WIE IEEE that
     </string-array>
     
     <string-array name="contact_title">
-        <item>"President"</item>
+        <item>"Hospitality"</item>
+        <item>"Corporate"</item>
+        <item>"Queries"</item>
+        <item>"Chairperson"</item>
+        <item>"Vice Chairperson"</item>
+        <item>"Corporate Secretary"</item>
     </string-array>
     
     <string-array name="contact_name">
-        <item>"Rishi Pandey</item>
+        <item>"Hospitality Information"</item>
+        <item>"Sponsorship Information"</item>
+        <item>"General Information"</item>
+        <item>"Rishi Pandey"</item>
+        <item>"Nancy Aggarwal"</item>
+        <item>"Kalpit Sarda"</item>
     </string-array>
     
     <string-array name="contact_phone">
-        <item>"999999999"</item>
+        <item>""</item>
+        <item>""</item>
+        <item>""</item>
+        <item>"+91-7503845891"</item>
+        <item>"+91-9999504697"</item>
+        <item>"+91-9953919433"</item>
     </string-array>
     
     <string-array name="contact_email">
-        <item>"somebody@something.com"</item>
+        <item>"hospitality.troika14@dcetech.com"</item>
+        <item>"sponsorship.troika14@dcetech.com"</item>
+        <item>"queries.troika14@dcetech.com"</item>
+        <item>"rishipandey777@gmail.com"</item>
+        <item>"nancy22418@gmail.com"</item>
+        <item>"sardakalpit@gmail.com"</item>
     </string-array>
 
 
