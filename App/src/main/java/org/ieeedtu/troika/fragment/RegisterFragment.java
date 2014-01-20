@@ -25,6 +25,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.ieeedtu.troika.R;
+import org.ieeedtu.troika.utils.SubmitRegister;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -201,20 +202,12 @@ public class RegisterFragment extends Fragment {
 
                 try {
                     submitPost.setEntity(new UrlEncodedFormEntity(postPair));
-                    submitClient.execute(submitPost);
-
-                    HttpResponse submitResponse = submitClient.execute(submitPost);
-                    String response = EntityUtils.toString(submitResponse.getEntity());
-                    Log.d("TROIKA_URL", postPair.toString());
-                    Log.d("TROIKA", response);
                 } catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
-                } catch (ClientProtocolException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
-
+                Log.d("TROIKA REGISTER", postPair.toString());
+                SubmitRegister submitRegister = new SubmitRegister(submitClient, submitPost);
+                submitRegister.execute();
             }
         });
 

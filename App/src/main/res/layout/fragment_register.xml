@@ -201,7 +201,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:maxWidth="100dp"
+                    android:ellipsize="marquee"
                     android:text="electrocution"
+                    android:singleLine="true"
                     android:textAllCaps="true"
                     android:id="@+id/register_electrocution_name" />
 
@@ -247,6 +249,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
                     android:text="ether_avatar"
                     android:textAllCaps="true"
                     android:id="@+id/register_ether_avatar_name" />
@@ -313,7 +317,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
                     android:text="todo_en_uno"
+                    android:singleLine="true"
                     android:textAllCaps="true"
                     android:id="@+id/register_todo_en_uno_name" />
 
@@ -338,6 +344,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="technovision"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
                     android:textAllCaps="true"
                     android:id="@+id/register_technovision_name" />
 
@@ -458,6 +466,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="inspironnature"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
                     android:textAllCaps="true"
                     android:id="@+id/register_inspironnature_name" />
 

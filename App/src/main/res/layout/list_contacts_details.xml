@@ -9,6 +9,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:includeFontPadding="true"
+        android:padding="5dp"
         android:id="@+id/contact_details_key"/>
 
     <TextView
@@ -16,6 +20,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/contact_details_value"
         android:textStyle="italic"
+        android:textSize="16sp"
+        android:includeFontPadding="true"
+        android:padding="5dp"
         android:textIsSelectable="true"
         android:selectAllOnFocus="true"
          />
