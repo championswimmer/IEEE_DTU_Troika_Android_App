@@ -177,7 +177,7 @@ public class RegisterFragment extends Fragment {
 
 
                 HttpClient submitClient = new DefaultHttpClient();
-                HttpPost submitPost = new HttpPost("http://troika.dcetech.com/register/submit-app.php");
+                HttpPost submitPost = new HttpPost("ieeedtu.com/appdata/submit-app.php");
                 List<NameValuePair> postPair = new ArrayList<NameValuePair>();
                 postPair.add(new BasicNameValuePair("name", registerName));
                 postPair.add(new BasicNameValuePair("email", registerEmail));
